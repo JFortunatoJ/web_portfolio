@@ -1,5 +1,14 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+let slideIndex = 1;
+
+let slides;
+let dots;
+
+function onLoad(){
+    slides = document.getElementsByClassName("screenshot");
+    dots = document.getElementsByClassName("dot");
+
+    showSlides(slideIndex);
+}
 
 // Next/previous controls
 function plusSlides(n) {
@@ -13,8 +22,6 @@ function currentSlide(n) {
 
 function showSlides(n) {
     let i;
-    const slides = document.getElementsByClassName("screenshot");
-    const dots = document.getElementsByClassName("dot");
 
     if (n > slides.length) {
         slideIndex = 1

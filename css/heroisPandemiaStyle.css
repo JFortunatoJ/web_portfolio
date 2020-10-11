@@ -131,6 +131,9 @@ nav ul li a:hover::after {
 .project-basic-info {
     color: white;
     display: block;
+    top: 0;
+    float: top;
+    margin-top: 10px;
 }
 
 .project-basic-info table {
@@ -149,9 +152,36 @@ nav ul li a:hover::after {
     text-shadow: 4px 2px 2px #222222;
 }
 
+.project-access{
+    margin-top: 10px;
+    background: linear-gradient(to top right, #1e5c92, #1d5d2d);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    display: grid;
+    grid-gap: 50px;
+    grid-auto-flow: column dense;
+    justify-content: space-evenly;
+}
+
+.project-access img{
+    width: 40px;
+    height: auto;
+    display: block;
+    transition: all 0.15s;
+}
+
+.project-access img:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 .project-description {
     color: white;
-    padding: 20px 25px;
+    padding: 20px 50px;
     margin: 20px 0;
 }
 
@@ -175,7 +205,7 @@ nav ul li a:hover::after {
     position: relative;
     margin: auto;
     display: block;
-    width: 300px;
+    width: 400px;
     height: auto;
 }
 
@@ -184,6 +214,7 @@ nav ul li a:hover::after {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
 }
 
 .screenshot-image {
@@ -206,9 +237,9 @@ nav ul li a:hover::after {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: aqua;
+    color: black;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 25px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -222,16 +253,14 @@ nav ul li a:hover::after {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .dot-container {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: 5px;
-    left: 25%;
+    display: block;
     position: absolute;
+    left: 30%;
+    bottom: 5px;
 }
 
 /* The dots/bullets/indicators */
@@ -240,14 +269,14 @@ nav ul li a:hover::after {
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: aqua;
+    background-color: #525252;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-    background-color: #d0cf18;
+    background-color: azure;
 }
 
 /* Fading animation */
@@ -273,5 +302,80 @@ nav ul li a:hover::after {
     }
     to {
         opacity: 1
+    }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
     }
 }
