@@ -63,16 +63,6 @@
   width: 100%;
 }
 
-.project-tag {
-  color: white;
-  font-size: 15px;
-  background-color: #cc1869;
-  border-radius: 5px;
-  padding: 2px;
-  margin-right: 4px;
-  text-transform: uppercase;
-}
-
 .project-info-description {
   margin-top: 15px;
   width: 100%;

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {ContentProjectsService} from './content-projects.service';
+import { ContentProjectsService} from './content-projects.service';
+import { Observable} from 'rxjs';
+import {Project} from '../content-projects-project/project';
 
 @Component({
   selector: 'app-content-projects',
@@ -8,14 +10,25 @@ import {ContentProjectsService} from './content-projects.service';
 })
 export class ContentProjectsComponent implements OnInit {
 
-  professionalProjects: string[];
-  personalProjects: string[];
+  public professionalProjects: Project[];
+  public personalProjects: Project[];
 
   constructor(private contentProjectsService: ContentProjectsService) {
-    this.professionalProjects = contentProjectsService.getProfessionalProjects();
-    this.personalProjects = contentProjectsService.getPersonalProjects();
   }
 
   ngOnInit(): void {
+    this.contentProjectsService.getProfessionalProjects().subscribe(projects => {
+      this.professionalProjects = [];
+      projects.forEach(res => {
+        this.professionalProjects.push(res.payload.val());
+      });
+    });
+
+    this.contentProjectsService.getPersonalProjects().subscribe(projects => {
+      this.personalProjects = [];
+      projects.forEach(res => {
+        this.personalProjects.push(res.payload.val());
+      });
+    });
   }
 }

@@ -4,7 +4,7 @@
     <label lang="en">Professional Projects</label>
   </div>
   <div class="projects-container">
-    <app-content-projects-project *ngFor="let project of professionalProjects"></app-content-projects-project>
+    <app-content-projects-project *ngFor="let project of professionalProjects" [project]="project"></app-content-projects-project>
   </div>
 </div>
 <div class="projects-content" id="Personal">
@@ -13,6 +13,6 @@
     <label>Personal Projects</label>
   </div>
   <div class="projects-container">
-    <app-content-projects-project *ngFor="let project of personalProjects"></app-content-projects-project>
+    <app-content-projects-project *ngFor="let project of personalProjects" [project]="project"></app-content-projects-project>
   </div>
 </div>
