@@ -1,0 +1,18 @@
+.about-me {
+  margin-top: 10px;
+  background: linear-gradient(to top left, #005f55, #09a9a9);
+  text-align: center;
+  padding: 20px;
+  color: white;
+  position: relative;
+}
+
+.about-me-title {
+  font-size: 40px;
+  text-transform: uppercase;
+  text-shadow: 4px 2px 2px #222222;
+}
+
+.about-me-description {
+  font-size: 20px;
+}

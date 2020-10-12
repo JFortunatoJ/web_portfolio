@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow: hidden;
+  background-color: #222;
+  min-width: 320px;
+  min-height: 453px;
+  overflow-y: scroll;
+  display: block;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.project-anchor {
+  position: absolute;
+  left: 0;
+  top: -50px;
+}

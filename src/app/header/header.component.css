@@ -1,0 +1,30 @@
+/* Header Superior */
+.header-shape {
+  height: 205px;
+  width: 100%;
+  shape-outside: polygon(0 0, 100% 0, 100% var(--header-bottom-verts), calc(100% - 40px) 180px, 40px 180px, 0 var(--header-bottom-verts));
+  clip-path: polygon(0 0, 100% 0, 100% var(--header-bottom-verts), calc(100% - 40px) 180px, 40px 180px, 0 var(--header-bottom-verts));
+  /*background: linear-gradient(to top left, #03cafc, #00619e);*/
+  background: linear-gradient(to top right, #222222, #00619e);
+  text-align: center;
+  vertical-align: center;
+  display: block;
+  transition: clip-path 0.35s;
+}
+
+.header-list {
+  position: relative;
+  transform: translateY(50%);
+}
+
+.header-name {
+  font-size: 50px;
+  color: white;
+  text-shadow: 4px 2px #222222;
+}
+
+.header-professional {
+  font-size: 25px;
+  color: white;
+  text-shadow: 4px 2px #222222;
+}
