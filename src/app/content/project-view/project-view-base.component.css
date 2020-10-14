@@ -1,0 +1,50 @@
+.project-container {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+.project-name {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 90%;
+  height: 65px;
+  line-height: 65px;
+  background-color: #005f55;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.project-name label {
+  color: white;
+  font-size: 40px;
+  text-shadow: 4px 2px 2px #222222;
+}
+
+.project-info {
+  background-color: #2b9d9d;
+  width: 85%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  display: block;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.project-access{
+  margin-top: 10px;
+  background: linear-gradient(to top right, #1e5c92, #1d5d2d);
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+  display: grid;
+  grid-gap: 50px;
+  grid-auto-flow: column dense;
+  justify-content: space-evenly;
+}

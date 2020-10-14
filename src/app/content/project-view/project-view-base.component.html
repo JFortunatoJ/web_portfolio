@@ -1,0 +1,12 @@
+<div class="project-container">
+  <div class="project-name">
+    <label>{{project?.name}}</label>
+  </div>
+  <div class="project-info">
+    <app-info [project]="project"></app-info>
+    <div class="project-access">
+      <app-access *ngFor="let access of project?.access" [accessOptions]="access"></app-access>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
