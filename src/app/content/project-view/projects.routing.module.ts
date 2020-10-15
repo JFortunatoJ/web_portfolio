@@ -8,7 +8,7 @@ import {RoadStarComponent} from './road-star/road-star.component';
 import {Project} from '../shared/project';
 
 const PROJECTS_ROUTES: Routes = [
-  {path: 'project', component: ProjectViewBaseComponent,
+  {path: '', component: ProjectViewBaseComponent,
   children: [
     {
       path: 'roadstar',

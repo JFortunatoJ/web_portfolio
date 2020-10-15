@@ -12,7 +12,6 @@ import {HeaderComponent} from './header/header.component';
 import {FormsModule} from '@angular/forms';
 import {AppRoutingModule} from './app.routing.module';
 import {IndexModule} from './content/main/index.module';
-import {ProjectsViewModule} from './content/project-view/projects-view.module';
 import {IndexComponent} from './content/main/index.component';
 
 @NgModule({
@@ -29,7 +28,6 @@ import {IndexComponent} from './content/main/index.component';
     AngularFireDatabaseModule,
     FormsModule,
     IndexModule,
-    ProjectsViewModule,
     AppRoutingModule
   ],
   providers: [],

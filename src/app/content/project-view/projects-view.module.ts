@@ -19,7 +19,6 @@ import {ProjectViewBaseComponent} from './project-view-base.component';
     RoadStarComponent
   ],
   exports: [
-    HeroisPandemiaComponent
   ],
   imports: [
     CommonModule,
