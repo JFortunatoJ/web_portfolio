@@ -29,13 +29,11 @@
     </div>
   </div>
   <div class="project-screenshots">
-    <img *ngFor="let url of imagesUrl" src="{{url}}">
+    <img class="project-screenshot" *ngFor="let url of imagesUrl" src="{{url}}">
   </div>
   <!--<app-image-carousel [imagesUrls]="imagesUrl"></app-image-carousel>-->
   <div class="project-description">
-    <div class="project-description-about">
-      <label>Desenvolvimento</label>
-    </div>
+    <label class="project-description-about">Desenvolvimento</label>
     <div class="project-description-text">
       <p>
         O jogo foi inicialmente desenvolvido para dispositivos móveis (Android e iOS), porém para facilitar a
@@ -66,10 +64,11 @@
     </div>
   </div>
   <div class="project-description">
-    <div class="project-description-about">
-      <label>Login com Facebook</label>
-    </div>
+    <label class="project-description-about">Login com Facebook</label>
     <div class="project-description-text">
+      <img class="project-screenshot" src="assets/images/herois-pandemia/heroisPandemia_12.jpg">
+
     </div>
   </div>
 </div>
+

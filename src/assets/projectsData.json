@@ -312,6 +312,38 @@
         ]
       },
       {
+        "name": "Carla",
+        "description": "it's an third person educational game, about a dreamy blind girl who needs to help her father find some lost letters.",
+        "thumbUrl": "carla",
+        "tags": [
+          "Unity",
+          "C#",
+          "Windows",
+          "3D"
+        ],
+        "contributions": [
+          "Gameplay Mechanics",
+          "Implementation of Animations",
+          "Shaders"
+        ],
+        "categories": [
+          "Casual", "Educational"
+        ],
+        "platforms": [
+          "Windows"
+        ],
+        "engine": "Unity",
+        "languages": [
+          "C#"
+        ],
+        "access": [
+          {
+            "type": -1,
+            "url": "https://gamejolt.com/games/Carla/443343"
+          }
+        ]
+      },
+      {
         "name": "Alpha Core",
         "description": "it's a Deathmatch FPS in teams where the goals are to eliminate the opposing team or to be the first to collect a relic in the center of the maze, the Alpha Core.",
         "thumbUrl": "alphacore",

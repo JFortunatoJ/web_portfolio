@@ -2,7 +2,7 @@
   background-color: rgba(0,0,0,0.3);
   width: 75%;
   margin: 0 auto;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .project-description {
@@ -45,7 +45,7 @@
   justify-items: center;
 }
 
-.project-screenshots img{
+.project-screenshot{
   max-height: 550px;
   width: auto;
   border: 5px solid white;

@@ -35,6 +35,8 @@ export class ProjectAccessComponent implements OnInit {
         this.iconUrl = 'steam.png';
         this.accessName = 'Steam';
         break;
+      default:
+        break;
     }
   }
 }

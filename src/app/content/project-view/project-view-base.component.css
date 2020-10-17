@@ -12,9 +12,10 @@
   width: 95%;
   height: 65px;
   line-height: 65px;
-  background-color: #005f55;
+
   text-align: center;
   border-radius: 10px;
+  background: linear-gradient(#73F7E4, #10AAAD);
 }
 
 .project-name label {
@@ -33,7 +34,7 @@
   border-radius: 10px;
 
   /*background: linear-gradient(to bottom left, #216ea8, #1d737c);*/
-  background-image: url('~src/assets/images/herois-pandemia/heroisPandemia_Background.jpg');
+  background-image: url('~src/assets/images/herois-pandemia/heroisPandemia_Background.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
@@ -41,7 +42,7 @@
 
 .project-access{
   margin-top: 10px;
-  background: linear-gradient(to top right, #1e5c92, #1d5d2d);
+  background: linear-gradient(#73F7E4, #10AAAD);
   border-radius: 10px;
   padding: 10px;
   margin-left: auto;
