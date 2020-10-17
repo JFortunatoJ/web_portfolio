@@ -8,6 +8,7 @@ import {ProjectAccessComponent} from './project-access/project-access.component'
 import {RoadStarComponent} from './road-star/road-star.component';
 import {HeroisPandemiaComponent} from './herois-pandemia/herois-pandemia.component';
 import {ProjectViewBaseComponent} from './project-view-base.component';
+import {ImageCarouselComponent} from '../../image-carousel/image-carousel.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import {ProjectViewBaseComponent} from './project-view-base.component';
     ProjectViewBaseComponent,
     ProjectBasicInfoComponent,
     ProjectAccessComponent,
+    ImageCarouselComponent,
     HeroisPandemiaComponent,
     RoadStarComponent
   ],

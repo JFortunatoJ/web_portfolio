@@ -1,90 +1,75 @@
-<div class="project-description">
-  <div class="project-description-about">
-    <label>About</label>
-  </div>
-  <div class="project-description-description">
-    <label>O jogo gratuito Heróis da
-      Pandemia tem como objetivo conscientizar o público sobre a propagação
-      da COVID-19 de forma didática e divertida. Desenvolvido pelo Centro
-      Universitário Facens em parceria com o Centro Universitário Newton
-      Paiva, o game educa o jogador sobre as formas de transmissão do novo
-      coronavírus, além de apresentar métodos de prevenção.
-    </label>
-    <br>
-    <br>
-    <label>Ao todo, são sete mini games:</label>
-    <ul>
-      <li>Lavar as mãos</li>
-      <li>Desinfecção</li>
-      <li>Distanciamento social</li>
-      <li>Uso de máscaras</li>
-      <li>Evitar tocar o rosto</li>
-      <li>Fique em casa/quarentena</li>
-      <li>Sistema imunológico</li>
-    </ul>
-  </div>
-</div>
-<!--div class="project-screenshots">
-  <div class="screenshot fade">
-    <div class="screenshot-image">
-      <img src="../images/heroisPandemia/heroisPandemia_1.jpg">
+<div class="content">
+  <div class="project-description">
+    <label class="project-description-about">Sobre</label>
+    <div class="project-description-text">
+      <label>O jogo gratuito Heróis da
+        Pandemia tem como objetivo conscientizar o público sobre a propagação
+        da COVID-19 de forma didática e divertida. Desenvolvido pelo Centro
+        Universitário Facens em parceria com o Centro Universitário Newton
+        Paiva, o game educa o jogador sobre as formas de transmissão do novo
+        coronavírus, além de apresentar métodos de prevenção. São sete mini games que, em cada uma das fases, trazem
+        conteúdos sobre alguma ação que precisa ser tomada na prevenção da Covid-19, como lavagem das mãos,
+        distanciamento
+        social e uso de máscaras. Ao concluir a ação, o usuário passa de fase e continua com os exercícios de precaução
+        contra o vírus.
+        O trabalho de desenvolvimento do projeto durou 20 dias, e a equipe de produção do jogo foi composta por sete
+        pessoas.
+      </label>
+      <br><br>
+      <label><strong>Os temas dos mini games são:</strong></label>
+      <ul>
+        <li>Lavar as mãos</li>
+        <li>Desinfecção</li>
+        <li>Distanciamento social</li>
+        <li>Uso de máscaras</li>
+        <li>Evitar tocar o rosto</li>
+        <li>Fique em casa/quarentena</li>
+        <li>Sistema imunológico</li>
+      </ul>
     </div>
   </div>
-  <div class="screenshot fade">
-    <div class="screenshot-image">
-      <img src="../images/heroisPandemia/heroisPandemia_2.jpg">
+  <div class="project-screenshots">
+    <img *ngFor="let url of imagesUrl" src="{{url}}">
+  </div>
+  <!--<app-image-carousel [imagesUrls]="imagesUrl"></app-image-carousel>-->
+  <div class="project-description">
+    <div class="project-description-about">
+      <label>Desenvolvimento</label>
+    </div>
+    <div class="project-description-text">
+      <p>
+        O jogo foi inicialmente desenvolvido para dispositivos móveis (Android e iOS), porém para facilitar a
+        acessibilidade, decidimos portá-lo para Web, não sendo
+        necessário realizar download direto, sendo possível jogá-lo tanto do navegador de um computador quanto de um
+        celular.
+      </p>
+      <br>
+      <p>
+        O principal desafio foi otimizar o jogo para dispositivos móveis, porque até então o SDK Web GL da Unity não
+        possui suporte para ser executado em celulares, como resultado,
+        enquanto no navegador do computador o jogo executava com tranquilidade, em dispositivos móveis o framerate caía
+        drasticamente, sendo praticamente injogável em alguns casos. Eu com os meus colegas então
+        passamos alguns bons dias pesquisando, testando e gerando <strong>muitas</strong> builds, e como há
+        relativamente pouco conteúdo na internet sobre o tema e essa foi basicamente nossa primeira experiência no
+        desenvolvimento de um jogo para Web GL utilizando Unity e que precisaria funcionar em dispositivos móveis, fomos
+        progredindo na base da tentativa e erro. Chegamos a cogitar em desenvolver o jogo
+        utilizando outra engine como Play Canvas que é totalmente focada em jogos para web, porém o prazo de entrega não
+        seria suficiente para aprendermos uma nova engine e desenvolver o jogo novamente nela.
+      </p>
+      <br>
+      <p>
+        Por fim conseguimos acertar na otimização do jogo e entregar dentro do prazo. Apesar das dificuldades, foi um
+        ótimo aprendizado que nos ensinou muito
+        sobre builds Web GL utilizando a Unity, as configurações necessárias e práticas de desenvolvimento e interação
+        com os colegas que ajudam a agilizar o trabalho.
+      </p>
     </div>
   </div>
-  <div class="screenshot fade">
-    <div class="screenshot-image">
-      <img src="../images/heroisPandemia/heroisPandemia_3.jpg">
+  <div class="project-description">
+    <div class="project-description-about">
+      <label>Login com Facebook</label>
     </div>
-  </div>
-  <div class="screenshot fade">
-    <div class="screenshot-image">
-      <img src="../images/heroisPandemia/heroisPandemia_4.jpg">
+    <div class="project-description-text">
     </div>
-  </div>
-  <div class="screenshot fade">
-    <div class="screenshot-image">
-      <img src="../images/heroisPandemia/heroisPandemia_5.jpg">
-    </div>
-  </div>
-  <div class="screenshot fade">
-    <div class="screenshot-image">
-      <img src="../images/heroisPandemia/heroisPandemia_6.jpg">
-    </div>
-  </div>
-  <div class="screenshot fade">
-    <div class="screenshot-image">
-      <img src="../images/heroisPandemia/heroisPandemia_7.jpg">
-    </div>
-  </div>
-
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-  <div class="dot-container">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-    <span class="dot" onclick="currentSlide(5)"></span>
-    <span class="dot" onclick="currentSlide(6)"></span>
-    <span class="dot" onclick="currentSlide(7)"></span>
-  </div>
-</div -->
-<div class="project-description">
-  <div class="project-description-about">
-    <label>Aspectos Técnicos</label>
-  </div>
-  <div class="project-description-description">
-    <label>O jogo gratuito Heróis da
-      Pandemia tem como objetivo conscientizar o público sobre a propagação
-      da COVID-19 de forma didática e divertida. Desenvolvido pelo Centro
-      Universitário Facens em parceria com o Centro Universitário Newton
-      Paiva, o game educa o jogador sobre as formas de transmissão do novo
-      coronavírus, além de apresentar métodos de prevenção.
-    </label>
   </div>
 </div>

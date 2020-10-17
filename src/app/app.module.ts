@@ -31,6 +31,8 @@ import {IndexComponent} from './content/main/index.component';
     AppRoutingModule
   ],
   providers: [],
+  exports: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

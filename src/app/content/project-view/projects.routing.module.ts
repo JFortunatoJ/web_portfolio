@@ -13,12 +13,12 @@ const PROJECTS_ROUTES: Routes = [
     {
       path: 'roadstar',
       component: RoadStarComponent,
-      data: { id: 0 }
+      data: { id: 'roadstar' }
     },
     {
       path: 'heroispandemia',
       component: HeroisPandemiaComponent,
-      data: { id: 1 }
+      data: { id: 'heroispandemia' }
     }
   ]}
 ];

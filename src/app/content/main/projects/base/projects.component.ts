@@ -21,17 +21,11 @@ export class ProjectsComponent implements OnInit, OnDestroy{
 
   ngOnInit(): void {
     this.proProjectsSubs = this.contentProjectsService.getAllProfessionalProjects().subscribe(projects => {
-      this.professionalProjects = [];
-      projects.forEach(res => {
-        this.professionalProjects.push(res.payload.val());
-      });
+      this.professionalProjects = projects;
     });
 
     this.perProjectsSubs = this.contentProjectsService.getAllPersonalProjects().subscribe(projects => {
-      this.personalProjects = [];
-      projects.forEach(res => {
-        this.personalProjects.push(res.payload.val());
-      });
+      this.personalProjects = projects;
     });
   }
 

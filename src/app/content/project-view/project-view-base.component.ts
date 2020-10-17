@@ -15,7 +15,7 @@ export class ProjectViewBaseComponent implements OnInit, OnDestroy {
   public project: Project;
 
   private loadData: Subscription;
-  projectId: number;
+  projectId: string;
 
   constructor(private route: ActivatedRoute, private contentProjectsService: ContentProjectsService) {
     this.loadData = this.route.firstChild.data.subscribe(params => {
@@ -25,7 +25,7 @@ export class ProjectViewBaseComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.loadData = this.contentProjectsService.getProfessionalProject(this.projectId).subscribe(project => {
-      this.project =  project.payload.val();
+      this.project =  project;
     });
   }
 

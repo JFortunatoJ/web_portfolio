@@ -9,7 +9,7 @@
   margin-left: auto;
   margin-right: auto;
   display: block;
-  width: 90%;
+  width: 95%;
   height: 65px;
   line-height: 65px;
   background-color: #005f55;
@@ -24,15 +24,19 @@
 }
 
 .project-info {
-  background-color: #2b9d9d;
-  width: 85%;
+  width: 90%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 20px;
   display: block;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
+
+  /*background: linear-gradient(to bottom left, #216ea8, #1d737c);*/
+  background-image: url('~src/assets/images/herois-pandemia/heroisPandemia_Background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
 }
 
 .project-access{
