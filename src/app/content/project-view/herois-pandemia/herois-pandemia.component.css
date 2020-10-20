@@ -3,12 +3,16 @@
   width: 75%;
   margin: 0 auto;
   border-radius: 10px;
+  padding-bottom: 20px;
 }
 
 .project-description {
   color: white;
-  padding: 20px 50px;
-  margin: 20px 0;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .project-description-about {
@@ -19,7 +23,7 @@
 
 .project-description-text {
   text-align: justify;
-  font-size: 21px;
+  font-size: 20px;
 }
 
 .project-description-text ul {
@@ -51,4 +55,28 @@
   border: 5px solid white;
   border-radius: 5px;
   margin: 0 auto;
+}
+
+.login-ranking{
+  margin: 20px auto;
+  display: grid;
+  grid-row-gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 350px));
+  justify-content: space-evenly;
+  align-items: center;
+  justify-items: center;
+}
+
+.login-ranking-image{
+  max-height: 550px;
+  width: auto;
+  border: 5px solid white;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.config{
+  border: 3px solid white;
+  border-radius: 5px;
+  margin: 15px auto;
 }
