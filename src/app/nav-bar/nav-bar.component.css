@@ -7,14 +7,14 @@
 /* Barra de Navegação */
 .navBar {
   width: 100%;
-  height: 50px;
+  height: 60px;
   background: linear-gradient(to top right, #222222, #525252);
   transition: all 0.35s;
-  shape-outside: polygon(0 0, 100% 0, 100% 50%, var(--nav-bar-right-verts) 100%, var(--nav-bar-left-verts) 100%, 0 50%);
-  clip-path: polygon(0 0, 100% 0, 100% 50%, var(--nav-bar-right-verts) 100%, var(--nav-bar-left-verts) 100%, 0 50%);
-  margin-top: -25px;
+  /*shape-outside: polygon(0 0, 100% 0, 100% 50%, var(--nav-bar-right-verts) 100%, var(--nav-bar-left-verts) 100%, 0 50%);*/
+  /*clip-path: polygon(0 0, 100% 0, 100% 50%, var(--nav-bar-right-verts) 100%, var(--nav-bar-left-verts) 100%, 0 50%);*/
   display: block;
   z-index: 1000;
+  position: relative;
 }
 
 .navBar-sticky {
@@ -34,6 +34,10 @@ nav ul {
   padding: 0 100px;
   transform: translateY(50%);
   list-style: none;
+}
+
+nav ul li{
+
 }
 
 nav ul li a {

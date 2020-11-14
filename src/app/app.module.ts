@@ -2,9 +2,6 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {AngularFireModule} from '@angular/fire';
-import {AngularFireDatabaseModule} from '@angular/fire/database';
-import {environment} from '../environments/environment';
 
 import {NavBarComponent} from './nav-bar/nav-bar.component';
 import {FooterComponent} from './footer/footer.component';
@@ -24,8 +21,6 @@ import {IndexComponent} from './content/main/index.component';
   ],
   imports: [
     BrowserModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireDatabaseModule,
     FormsModule,
     IndexModule,
     AppRoutingModule

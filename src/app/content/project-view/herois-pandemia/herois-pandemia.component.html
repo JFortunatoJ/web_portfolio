@@ -82,7 +82,26 @@
   <div class="project-description">
     <label class="project-description-about">Otimização</label>
     <div class="project-description-text">
-
+      <p>Ao gerarmos a primeira build para Web GL percebemos que o desempenho estava muito abaixo se comparado com a build para Android, principalmente porque até então builds Web GL feitas na Unity não são
+      otimizadas para dispositivos móveis. Então eu fiquei responsável por boa parte das otimizações necessárias para que o jogo executasse com fluidez em dispositivos móveis.</p>
+      <p>As principais otimizações no jogo foram:</p>
+      <br>
+      <div>
+        <p>Sprite Atlas</p>
+        <p>Usados para diminuirem a quantidade de Draw Calls e tornar mais prático a compressão pela Unity</p>
+        <img src="assets/images/herois-pandemia/heroisPandemia_atlas.png">
+      </div>
+      <div>
+        <p>Compressão de imagens</p>
+        <p>Percebi que algumas imagens eram desnecessariamente grandes, ocupando um grande espaço tanto em disco quanto em RAM. Então diminui o tamanho das imagens em um software de edição e ajustei as
+        configurações de compressão para que consumissem a menor quantidade de RAM possível sem que perdessem visivelmente a qualidade.</p>
+        <img src="assets/images/herois-pandemia/heroisPandemia_compression.png">
+      </div>
+      <div>
+        <p>Scripts</p>
+        <p>Foi necessária a otimização e aplicação de boas práticas em alguns scripts do jogo, visando principalmente diminuir o processamento necessário para executá-los.</p>
+        <p>Toda a otimização que fiz no código pode se resumir em guardar valores em cache e evitar realizar processamentos desnecessários ou em momentos desnecessários.</p>
+      </div>
     </div>
   </div>
 </div>

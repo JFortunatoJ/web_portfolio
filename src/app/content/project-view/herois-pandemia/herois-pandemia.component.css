@@ -1,29 +1,27 @@
 .content{
   background-color: rgba(0,0,0,0.3);
-  width: 75%;
+  width: 65%;
   margin: 0 auto;
   border-radius: 10px;
-  padding-bottom: 20px;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .project-description {
   color: white;
-  padding-top: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
   margin-left: 0;
   margin-right: 0;
+  padding: 20px 50px;
 }
 
 .project-description-about {
-  font-size: 28px;
+  font-size: 22px;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .project-description-text {
   text-align: justify;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .project-description-text ul {

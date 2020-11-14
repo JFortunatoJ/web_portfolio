@@ -4,16 +4,6 @@
 
 export const environment = {
   production: false,
-  firebaseConfig: {
-    apiKey: 'AIzaSyDfEUBmnW4pRxTbs2bTy0E_xU881zlXnes',
-    authDomain: 'web-portfolio-d7101.firebaseapp.com',
-    databaseURL: 'https://web-portfolio-d7101.firebaseio.com',
-    projectId: 'web-portfolio-d7101',
-    storageBucket: 'web-portfolio-d7101.appspot.com',
-    messagingSenderId: '360903338075',
-    appId: '1:360903338075:web:d8b2a8a6fdadae2a54377e',
-    measurementId: 'G-S21XZ3WJBF'
-  }
 };
 
 /*

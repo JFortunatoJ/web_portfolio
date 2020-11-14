@@ -1,18 +1,20 @@
-<div class="projects-content" id="Professional">
-  <a name="ProfessionalProjects" class="project-anchor">&nbsp;</a>
-  <div class="prof-projects-name">
-    <label lang="en">Professional Projects</label>
+<div class="projects">
+  <div class="projects-content" id="Professional">
+    <a name="ProfessionalProjects" class="project-anchor">&nbsp;</a>
+    <div class="projects-header-name">
+      <label lang="en">Professional Projects</label>
+    </div>
+    <div class="projects-container">
+      <app-project-element *ngFor="let project of professionalProjects" [project]="project"></app-project-element>
+    </div>
   </div>
-  <div class="projects-container">
-    <app-project-element *ngFor="let project of professionalProjects" [project]="project"></app-project-element>
-  </div>
-</div>
-<div class="projects-content" id="Personal">
-  <a name="PersonalProjects" class="project-anchor">&nbsp;</a>
-  <div class="personal-projects-name">
-    <label>Personal Projects</label>
-  </div>
-  <div class="projects-container">
-    <app-project-element *ngFor="let project of personalProjects" [project]="project"></app-project-element>
+  <div class="projects-content" id="Personal">
+    <a name="PersonalProjects" class="project-anchor">&nbsp;</a>
+    <div class="projects-header-name">
+      <label>Personal Projects</label>
+    </div>
+    <div class="projects-container">
+      <app-project-element *ngFor="let project of personalProjects" [project]="project"></app-project-element>
+    </div>
   </div>
 </div>

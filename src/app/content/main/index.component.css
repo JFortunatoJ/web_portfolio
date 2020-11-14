@@ -1,8 +1,9 @@
 /* Conteúdo */
 .content {
   height: 100%;
-  width: 100%;
-  display: block;
+  width: 85%;
+  display: grid;
+  grid-row-gap: 50px;
   margin-bottom: 75px;
   margin-left: auto;
   margin-right: auto;

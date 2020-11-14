@@ -1,11 +1,11 @@
 /* Header Superior */
 .header-shape {
-  height: 205px;
+  height: 350px;
   width: 100%;
-  shape-outside: polygon(0 0, 100% 0, 100% var(--header-bottom-verts), calc(100% - 40px) 180px, 40px 180px, 0 var(--header-bottom-verts));
-  clip-path: polygon(0 0, 100% 0, 100% var(--header-bottom-verts), calc(100% - 40px) 180px, 40px 180px, 0 var(--header-bottom-verts));
-  /*background: linear-gradient(to top left, #03cafc, #00619e);*/
-  background: linear-gradient(to top right, #222222, #00619e);
+  /*shape-outside: polygon(0 0, 100% 0, 100% var(--header-bottom-verts), calc(100% - 40px) 180px, 40px 180px, 0 var(--header-bottom-verts));*/
+  /*clip-path: polygon(0 0, 100% 0, 100% var(--header-bottom-verts), calc(100% - 40px) 180px, 40px 180px, 0 var(--header-bottom-verts));*/
+  /*background: linear-gradient(to top right, #222222, #00619e);*/
+  background: #10AAAD;
   text-align: center;
   vertical-align: center;
   display: block;

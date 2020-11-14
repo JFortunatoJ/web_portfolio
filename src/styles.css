@@ -10,12 +10,13 @@ html {
 
 body {
   overflow: hidden;
-  background-color: #222;
+  background-color: #1c2b2d;
   min-width: 320px;
   min-height: 453px;
   overflow-y: scroll;
   display: block;
-  font-family: 'Patrick Hand', cursive;
+  /*font-family: 'Patrick Hand', cursive;*/
+  font-family: 'PT Sans', sans-serif;
 }
 
 .project-anchor {

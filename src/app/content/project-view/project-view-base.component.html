@@ -3,8 +3,8 @@
     <label>{{project?.name}}</label>
   </div>
   <div class="project-info">
-    <app-info [project]="project"></app-info>
-    <div class="project-access">
+      <app-info [project]="project"></app-info>
+    <div class="project-access" *ngIf="project?.access.length > 0">
       <app-access *ngFor="let access of project?.access" [accessOptions]="access"></app-access>
     </div>
     <router-outlet></router-outlet>

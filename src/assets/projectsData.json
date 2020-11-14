@@ -46,10 +46,10 @@
           "Web GL"
         ],
         "contributions": [
+          "Web GL port",
           "Facebook Integration",
           "Ranking",
-          "Optimization",
-          "Web GL port and optimization"
+          "Optimization"
         ],
         "categories": [
           "Casual",

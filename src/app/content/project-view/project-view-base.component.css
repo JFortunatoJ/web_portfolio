@@ -1,7 +1,8 @@
 .project-container {
   width: 100%;
   height: auto;
-  margin-bottom: 25px;
+  display: grid;
+  row-gap: 10px;
 }
 
 .project-name {
@@ -12,7 +13,6 @@
   width: 95%;
   height: 65px;
   line-height: 65px;
-
   text-align: center;
   border-radius: 10px;
   background: linear-gradient(#73F7E4, #10AAAD);
@@ -29,9 +29,10 @@
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 20px;
-  display: block;
+  display: grid;
   border-radius: 10px;
+  row-gap: 10px;
+  padding: 20px 0;
 
   /*background: linear-gradient(to bottom left, #216ea8, #1d737c);*/
   background-image: url('~src/assets/images/herois-pandemia/heroisPandemia_Background.png');
@@ -41,12 +42,10 @@
 }
 
 .project-access{
-  margin-top: 10px;
   background: linear-gradient(#73F7E4, #10AAAD);
   border-radius: 10px;
   padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: max-content;
   display: grid;
   grid-gap: 50px;
