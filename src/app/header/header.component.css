@@ -1,6 +1,6 @@
 /* Header Superior */
 .header-shape {
-  height: 350px;
+  height: 400px;
   width: 100%;
   /*shape-outside: polygon(0 0, 100% 0, 100% var(--header-bottom-verts), calc(100% - 40px) 180px, 40px 180px, 0 var(--header-bottom-verts));*/
   /*clip-path: polygon(0 0, 100% 0, 100% var(--header-bottom-verts), calc(100% - 40px) 180px, 40px 180px, 0 var(--header-bottom-verts));*/
