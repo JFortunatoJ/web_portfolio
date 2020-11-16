@@ -1,11 +1,13 @@
 /* Header Superior */
-.header-shape {
+.header{
   height: 400px;
   width: 100%;
-  /*shape-outside: polygon(0 0, 100% 0, 100% var(--header-bottom-verts), calc(100% - 40px) 180px, 40px 180px, 0 var(--header-bottom-verts));*/
-  /*clip-path: polygon(0 0, 100% 0, 100% var(--header-bottom-verts), calc(100% - 40px) 180px, 40px 180px, 0 var(--header-bottom-verts));*/
+  padding: 0;
+  margin: 0;
+  /*shape-outside: polygon(0 0, 100% 0, 100% var(--game-bottom-verts), calc(100% - 40px) 180px, 40px 180px, 0 var(--game-bottom-verts));*/
+  /*clip-path: polygon(0 0, 100% 0, 100% var(--game-bottom-verts), calc(100% - 40px) 180px, 40px 180px, 0 var(--game-bottom-verts));*/
   /*background: linear-gradient(to top right, #222222, #00619e);*/
-  background: #10AAAD;
+  background: #49abff;
   text-align: center;
   vertical-align: center;
   display: block;

@@ -29,6 +29,8 @@
 .me{
   border-radius: 180px;
   border: white 5px solid;
+  width: 324px;
+  height: auto;
 }
 
 .my-name{
