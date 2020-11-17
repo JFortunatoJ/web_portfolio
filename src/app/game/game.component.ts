@@ -1,55 +1,44 @@
-import {Component, ElementRef, ViewChild, AfterViewInit} from '@angular/core';
+import {Component, ElementRef, ViewChild, AfterViewInit, OnInit} from '@angular/core';
 
-import * as PIXI from 'pixi.js';
-import {Character} from './classes/Character';
-
-const app = new PIXI.Application({
-  width: window.innerWidth,
-  height: 400,
-  antialias: true,
-  transparent: true,
-  resolution: 1,
-});
+import * as Phaser from 'phaser';
+import {MainScene} from './Phaser/MainScene';
+import {Character} from './PIXIJS/classes/Character';
 
 @Component({
   selector: 'app-header',
   templateUrl: './game.component.html',
   styleUrls: ['./game.component.css']
 })
-export class GameComponent implements AfterViewInit {
+export class GameComponent implements AfterViewInit , OnInit{
 
   @ViewChild('header')
   public header: ElementRef;
 
-  private canUpdate: boolean;
-
-  private character: Character;
-  private ground: any;
+  private phaserGame: Phaser.Game;
+  private config: Phaser.Types.Core.GameConfig;
 
   constructor() {
+    this.config = {
+      type: Phaser.AUTO,
+      height: 400,
+      width: window.innerWidth,
+      scene: [MainScene],
+      parent: 'gameContainer',
+      physics: {
+        default: 'arcade',
+        arcade: {
+          gravity: {y: 200}
+        }
+      },
+      transparent: true
+    };
+  }
 
+  ngOnInit(): void {
+    this.phaserGame = new Phaser.Game(this.config);
   }
 
   ngAfterViewInit(): void {
-    this.header.nativeElement.appendChild(app.view);
-
-    app.renderer.view.style.position = 'absolute';
-    app.renderer.view.style.display = 'block';
-
-    app.ticker.add(delta => this.update(delta));
-
-    this.loadCharacter();
-  }
-
-  update(deltaTime): void {
-    if (!this.canUpdate) {
-      return;
-    }
-
-    this.character.update(deltaTime);
-  }
-
-  loadCharacter(): void {
-    this.character = new Character(app, 100, 100, app.renderer.width / 2, app.renderer.height / 2, () => this.canUpdate = true);
+    this.header.nativeElement.appendChild(this.phaserGame.canvas);
   }
 }
