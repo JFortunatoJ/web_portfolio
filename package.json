@@ -23,7 +23,7 @@
     "@angular/router": "~10.1.5",
     "firebase": "^7.23.0",
     "phaser": "^3.24.1",
-    "pixi.js": "^5.3.3",
+    "phaser3-nineslice": "^0.5.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
