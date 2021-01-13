@@ -1,5 +1,6 @@
 footer {
-  background: #406E8E;
+  background: linear-gradient(to bottom left, #002d37, #00232e);
+  /*background: #406E8E;*/
   width: 100%;
   text-align: center;
   font-size: 17px;
@@ -11,4 +12,18 @@ footer {
 .footer-credits {
   font-size: 15px;
   font-style: italic;
+}
+
+a:link {
+  color: #00a8e8;
+}
+
+a:visited {
+  color: #00a8e8;
+}
+
+a:hover{
+  transition: color 0.1s;
+  color: #007ea7;
+  /*text-decoration: underline;*/
 }

@@ -17,7 +17,8 @@ export class AppComponent implements OnInit{
     window.addEventListener('scroll', () => {
       const navBar = document.getElementById('navBar');
       // console.log(window.pageYOffset);
-      if (window.pageYOffset >= 180) {
+      // if (window.pageYOffset >= 180) {
+      if (window.pageYOffset > 0) {
         navBar.classList.add('navBar-sticky');
         root.style.setProperty('--nav-bar-left-verts', '0');
         root.style.setProperty('--nav-bar-right-verts', '100%');

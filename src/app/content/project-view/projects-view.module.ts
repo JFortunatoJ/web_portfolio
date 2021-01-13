@@ -5,7 +5,7 @@ import {FormsModule} from '@angular/forms';
 import {ProjectsRoutingModule} from './projects.routing.module';
 import {ProjectBasicInfoComponent} from './project-basic-info/project-basic-info.component';
 import {ProjectAccessComponent} from './project-access/project-access.component';
-import {RoadStarComponent} from './road-star/road-star.component';
+import {UnderConstructionComponent} from './under-construction/under-construction.component';
 import {HeroisPandemiaComponent} from './herois-pandemia/herois-pandemia.component';
 import {ProjectViewBaseComponent} from './project-view-base.component';
 import {ImageCarouselComponent} from '../../image-carousel/image-carousel.component';
@@ -18,7 +18,7 @@ import {ImageCarouselComponent} from '../../image-carousel/image-carousel.compon
     ProjectAccessComponent,
     ImageCarouselComponent,
     HeroisPandemiaComponent,
-    RoadStarComponent
+    UnderConstructionComponent
   ],
   exports: [
   ],

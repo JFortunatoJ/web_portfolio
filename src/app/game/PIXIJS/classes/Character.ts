@@ -1,4 +1,3 @@
-import * as PIXI from 'pixi.js';
 import {Keyboard} from './Keyboard';
 import {MainScene} from '../../Phaser/MainScene';
 

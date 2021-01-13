@@ -1,7 +1,7 @@
 .about-me {
   margin-top: 10px;
   /*background: linear-gradient(to top left, #005f55, #09a9a9);*/
-  background-color: #23395B;
+  background: linear-gradient(to bottom left, #003459, #004066) no-repeat fixed;
   padding: 20px;
   color: white;
   position: relative;
@@ -9,57 +9,60 @@
   border-radius: 10px;
 }
 
-.content{
+.content {
   padding: 20px;
   display: flex;
   column-gap: 70px;
 }
 
-.description{
+.description {
   text-align: left;
 }
 
-.my-info{
+.my-info {
   text-align: center;
   text-shadow: #222222 2px 2px;
   row-gap: 20px;
   display: grid;
 }
 
-.me{
+.me {
   border-radius: 180px;
   border: white 5px solid;
   width: 324px;
   height: auto;
 }
 
-.my-name{
+.my-name {
   font-size: 30px;
 }
 
-.my-profession{
+.my-profession {
   font-size: 20px;
 }
 
-.social-list{
+.social-list {
   width: 100%;
   display: grid;
   grid-auto-flow: column dense;
   justify-content: space-evenly;
 }
 
-.social-list img{
+.social-list img {
   width: auto;
   height: 45px;
   transition: all 0.1s;
 }
 
-.social-list img:hover{
+.social-list img:hover {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
-  filter: drop-shadow(0px 5px 3px rgba(0,0,0,0.30));
+  filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.30));
 }
 
+.email {
+  font-size: 18px;
+}
 
 .about-me-title {
   font-size: 40px;
@@ -70,4 +73,18 @@
 .about-me-description {
   font-size: 20px;
   line-height: 25pt;
+}
+
+a:link {
+  color: #00a8e8;
+}
+
+a:visited {
+  color: #00a8e8;
+}
+
+a:hover{
+  transition: color 0.1s;
+  color: #007ea7;
+  /*text-decoration: underline;*/
 }

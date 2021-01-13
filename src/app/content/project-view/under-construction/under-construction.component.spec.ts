@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RoadStarComponent } from './road-star.component';
+import { UnderConstructionComponent } from './under-construction.component';
 
 describe('HeroisPandemiaComponent', () => {
-  let component: RoadStarComponent;
-  let fixture: ComponentFixture<RoadStarComponent>;
+  let component: UnderConstructionComponent;
+  let fixture: ComponentFixture<UnderConstructionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RoadStarComponent ]
+      declarations: [ UnderConstructionComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RoadStarComponent);
+    fixture = TestBed.createComponent(UnderConstructionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

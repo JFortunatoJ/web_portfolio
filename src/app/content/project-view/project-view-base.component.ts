@@ -24,9 +24,19 @@ export class ProjectViewBaseComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.loadData = this.contentProjectsService.getProfessionalProject(this.projectId).subscribe(project => {
-      this.project =  project;
+    this.loadData = this.contentProjectsService.getProfessionalProject(this.projectId).subscribe(professionalProject => {
+      if (professionalProject != null) {
+        this.project = professionalProject;
+        return;
+      }
+
+      this.loadData = this.contentProjectsService.getPersonalProject(this.projectId).subscribe(personalProject => {
+        if (personalProject != null) {
+          this.project = personalProject;
+        }
+      });
     });
+    window.scroll(0, 0);
   }
 
   ngOnDestroy(): void {

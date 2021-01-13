@@ -1,6 +1,6 @@
 /* Conteúdo */
 .content {
-  height: 100%;
+  height: auto;
   width: 85%;
   display: grid;
   grid-row-gap: 70px;

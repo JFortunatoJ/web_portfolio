@@ -6,11 +6,16 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
 }
 
 body {
+  width: 100%;
+  height: 100%;
   overflow: hidden;
-  background-color: #1c2b2d;
+  background: linear-gradient(to bottom left, #001d27, #00171f) no-repeat fixed;
+  /*background-color: #00171f;*/
   min-width: 320px;
   min-height: 453px;
   overflow-y: scroll;
