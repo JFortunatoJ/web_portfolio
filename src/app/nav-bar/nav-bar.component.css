@@ -14,7 +14,9 @@
   /*clip-path: polygon(0 0, 100% 0, 100% 50%, var(--nav-bar-right-verts) 100%, var(--nav-bar-left-verts) 100%, 0 50%);*/
   display: block;
   z-index: 1000;
-  position: relative;
+  position: sticky;
+  top: 0;
+  /*position: relative;*/
 }
 
 .navBar-sticky {
@@ -52,7 +54,7 @@ nav ul li a:after {
   display: block;
   content: '';
   border-bottom: 2px solid #00a8e8;
-  filter: blur(1px);
+  /*filter: blur(1px);*/
   transform: scaleX(0);
   transition: transform 0.2s ease-in-out;
 }

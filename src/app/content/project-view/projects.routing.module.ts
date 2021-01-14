@@ -64,6 +64,11 @@ const PROJECTS_ROUTES: Routes = [
       path: 'alphacore',
       component: UnderConstructionComponent,
       data: { id: 'alphacore' }
+    },
+    {
+      path: 'centipedecombat',
+      component: UnderConstructionComponent,
+      data: { id: 'centipedecombat' }
     }
   ]}
 ];

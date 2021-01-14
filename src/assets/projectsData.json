@@ -348,6 +348,37 @@
         ],
         "access": [
         ]
+      },
+      {
+        "name": "Centipede Combat",
+        "description": "it's an arcade game inspired by two classic atari games.",
+        "thumbUrl": "centipedecombat",
+        "tags": [
+          "Unity",
+          "C#",
+          "Windows",
+          "2D",
+          "Game Jam"
+        ],
+        "contributions": [
+          "Gameplay Mechanics",
+          "Game Design",
+          "Level Design",
+          "Implementation of Animations",
+          "User Interface"
+        ],
+        "categories": [
+          "Casual"
+        ],
+        "platforms": [
+          "Windows"
+        ],
+        "engine": "Unity",
+        "languages": [
+          "C#"
+        ],
+        "access": [
+        ]
       }
     ]
   }

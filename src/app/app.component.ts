@@ -5,13 +5,14 @@ import {Component, OnInit} from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'João Fortunato Jr.';
 
   constructor() {
   }
 
   ngOnInit(): void {
+    /*
     const root = document.documentElement;
 
     window.addEventListener('scroll', () => {
@@ -30,5 +31,6 @@ export class AppComponent implements OnInit{
         root.style.setProperty('--game-bottom-verts', '205px');
       }
     });
+    */
   }
 }
