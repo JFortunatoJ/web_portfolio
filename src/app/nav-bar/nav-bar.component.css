@@ -4,6 +4,18 @@
   --header-bottom-verts: 205px
 }
 
+.warning-container{
+}
+
+.navBar-warning{
+  font-size: 15px;
+  color: white;
+  font-style: italic;
+  display: block;
+  transform: translate(0, 100%);
+  margin-left: 15px;
+}
+
 /* Barra de Navegação */
 .navBar {
   width: 100%;
