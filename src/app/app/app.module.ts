@@ -3,13 +3,14 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 
-import {NavBarComponent} from './nav-bar/nav-bar.component';
-import {FooterComponent} from './footer/footer.component';
-import {GameComponent} from './game/game.component';
+import {NavBarComponent} from '../nav-bar/nav-bar.component';
+import {FooterComponent} from '../footer/footer.component';
+import {GameComponent} from '../game/game.component';
 import {FormsModule} from '@angular/forms';
 import {AppRoutingModule} from './app.routing.module';
-import {IndexModule} from './content/main/index.module';
-import {IndexComponent} from './content/main/index.component';
+import {IndexModule} from '../content/main/index/index.module';
+import {IndexComponent} from '../content/main/index/index.component';
+import {PrivacyPolicyComponent} from '../privacy-policies/bouce-light/privacy-policy.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {IndexComponent} from './content/main/index.component';
     NavBarComponent,
     FooterComponent,
     GameComponent,
-    IndexComponent
+    IndexComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     BrowserModule,
