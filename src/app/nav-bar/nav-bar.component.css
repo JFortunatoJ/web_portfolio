@@ -1,7 +1,7 @@
 :root {
-  --nav-bar-left-verts: 40px;
-  --nav-bar-right-verts: calc(100% - 40px);
-  --header-bottom-verts: 205px
+  /*--nav-bar-left-verts: 40px;*/
+  /*--nav-bar-right-verts: calc(100% - 40px);*/
+  /*--header-bottom-verts: 205px*/
 }
 
 .warning-container{
@@ -22,9 +22,8 @@
   height: 60px;
   background-color: rgba(0, 0, 0, 0.8);
   transition: all 0.35s;
-  /*shape-outside: polygon(0 0, 100% 0, 100% 50%, var(--nav-bar-right-verts) 100%, var(--nav-bar-left-verts) 100%, 0 50%);*/
-  /*clip-path: polygon(0 0, 100% 0, 100% 50%, var(--nav-bar-right-verts) 100%, var(--nav-bar-left-verts) 100%, 0 50%);*/
-  display: block;
+  display: flex;
+  flex-direction: column;
   z-index: 1000;
   position: sticky;
   top: 0;
@@ -37,7 +36,7 @@
   position: sticky;
   top: 0;
   width: 100%;
-  display: block;
+  display: flex;
   z-index: 1000;
 }
 
