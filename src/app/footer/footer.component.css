@@ -1,16 +1,19 @@
 footer {
   background: linear-gradient(to bottom left, #002d37, #00232e);
-  /*background: #406E8E;*/
   width: 100%;
+  height: auto;
   text-align: center;
-  font-size: 17px;
+  font-size: min(17px, 3.5vw);
   color: white;
   display: block;
+}
+
+footer div{
   padding: 10px;
 }
 
 .footer-credits {
-  font-size: 15px;
+  font-size: min(15px, 2.5vw);
   font-style: italic;
 }
 
