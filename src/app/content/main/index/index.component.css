@@ -1,0 +1,10 @@
+/* Conteúdo */
+.content {
+  height: auto;
+  width: 85%;
+  display: grid;
+  grid-row-gap: 70px;
+  margin-bottom: 75px;
+  margin-left: auto;
+  margin-right: auto;
+}

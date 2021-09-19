@@ -1,0 +1,50 @@
+.project-container {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin-top: 10px;
+}
+
+/deep/ .project-name {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 95%;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+  border-radius: 10px;
+  background: linear-gradient(to bottom left, #00a8e8, #005f90);
+  /*background-color: #00a8e8;*/
+}
+
+.project-name label {
+  color: white;
+  font-size: 40px;
+  text-shadow: 4px 2px 2px #222222;
+}
+
+/deep/ .project-info {
+  width: 90%;
+  height: 90%;
+  margin: 10px auto;
+  display: grid;
+  border-radius: 10px;
+
+  /*background-image: url('~src/assets/images/herois-pandemia/heroisPandemia_Background.png');*/
+  background: linear-gradient(to bottom left, #003459, #002a4d) no-repeat fixed;
+  /*background-color: #003459;*/
+  background-size: 100%;
+}
+
+/deep/ .project-access{
+  background: linear-gradient(to bottom left, #007ea7, #006288) no-repeat fixed;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px auto;
+  width: max-content;
+  display: grid;
+  grid-gap: 50px;
+  grid-auto-flow: column dense;
+  justify-content: space-evenly;
+}

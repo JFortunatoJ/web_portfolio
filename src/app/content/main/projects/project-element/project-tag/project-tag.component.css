@@ -1,0 +1,9 @@
+.project-tag {
+  color: white;
+  font-size: 13px;
+  background-color: #cc1869;
+  border-radius: 5px;
+  padding: 3px;
+  margin-right: 4px;
+  text-transform: uppercase;
+}

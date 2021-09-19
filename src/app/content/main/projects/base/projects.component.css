@@ -1,0 +1,39 @@
+.projects{
+  display: grid;
+  row-gap: 50px;
+}
+
+.projects-content {
+  width: 100%;
+  margin: 10px auto;
+  position: relative;
+  display: block;
+}
+
+/*Projects Title Background*/
+.projects-header-name {
+  text-align: center;
+  height: 65px;
+  line-height: 65px;
+  /*background: linear-gradient(to top right, #e33939, #9e1010);*/
+  /*box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);*/
+  /*background: #406E8E;*/
+}
+
+/*Projects Title Text*/
+.projects-header-name label {
+  color: white;
+  text-shadow: 4px 2px 2px #222222;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.projects-container {
+  width: 100%;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 325px));
+  grid-template-rows: repeat(auto-fit, minmax(auto, auto));
+  margin: 20px auto;
+  justify-content: space-evenly;
+}
