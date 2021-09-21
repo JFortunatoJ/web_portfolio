@@ -43,15 +43,28 @@ nav {
   transition: transform 0.2s ease-in-out;
 }
 
-.navBar-warning{
+.warning-container{
+  width: auto;
+  position: absolute;
+  justify-content: space-around;
+  left: 15px;
+  bottom: 5px;
+}
+
+.warning-container img{
+  height: auto;
+  width: 35px;
+  bottom: 0;
+  position: absolute;
+  margin-left: 10px;
+}
+
+.warning-container label{
   font-size: 15px;
   color: white;
   font-style: italic;
   /*display: block;*/
   /*transform: translate(0, 100%);*/
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
 }
 
 .mobile-menu {
