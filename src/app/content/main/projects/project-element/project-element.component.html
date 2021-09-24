@@ -1,13 +1,13 @@
 <div class="project" id="RoadStar">
   <div class="project-info-image">
     <a routerLink="project/{{project.thumbUrl}}">
-<!--      <img src="https://firebasestorage.googleapis.com/v0/b/web-portfolio-d7101.appspot.com/o/projectsThumb%2F{{project.thumbUrl}}.png?alt=media">-->
+      <!--      <img src="https://firebasestorage.googleapis.com/v0/b/web-portfolio-d7101.appspot.com/o/projectsThumb%2F{{project.thumbUrl}}.png?alt=media">-->
       <img src="assets/images/thumbnails/{{project.thumbUrl}}.png">
     </a>
     <div class="project-name"><label>{{project.name}}</label></div>
   </div>
   <div class="project-info-tags">
-    <app-project-tag *ngFor="let tag of project.tags" [tag] ="tag"></app-project-tag>
+    <app-project-tag *ngFor="let tag of project.tags" [tag]="tag"></app-project-tag>
   </div>
   <div class="project-info-description">
     <label><strong>{{project.name}}</strong> {{project.description}}</label>

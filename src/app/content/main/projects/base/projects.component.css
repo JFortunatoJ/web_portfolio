@@ -1,6 +1,8 @@
 .projects{
   display: grid;
   row-gap: 50px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .projects-content {
@@ -32,8 +34,24 @@
   width: 100%;
   display: grid;
   grid-gap: 50px;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 325px));
+  grid-template-columns: repeat(auto-fill, min(350px, 25vw));
   grid-template-rows: repeat(auto-fit, minmax(auto, auto));
   margin: 20px auto;
   justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  .projects-header-name label {
+    font-size: 30px;
+  }
+
+  .projects-container {
+    display: block;
+    justify-content: space-around;
+  }
+
+  .projects-container > *:not(:last-child) {
+    display: block;
+    margin-bottom: 35px;
+  }
 }

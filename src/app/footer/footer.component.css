@@ -1,11 +1,13 @@
 footer {
   background: linear-gradient(to bottom left, #002d37, #00232e);
-  width: 100%;
+  width: auto;
   height: auto;
   text-align: center;
   font-size: min(17px, 3.5vw);
   color: white;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer div{

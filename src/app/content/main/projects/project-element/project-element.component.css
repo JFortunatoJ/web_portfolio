@@ -48,19 +48,55 @@
   line-height: 80px;
 }
 
+@media (max-width: 768px) {
+  .project {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .project-name {
+    opacity: 1;
+  }
+
+  .project-info-image{
+    width: 65vw;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .project-info-tags{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
+
+  .project-info-description {
+    text-align: center;
+    font-size: 17px;
+  }
+
+  .project-info-contributions{
+    font-size: 18px;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+  }
+}
+
 /*Project Name*/
 .project-name label {
   pointer-events: none;
   color: white;
   text-transform: uppercase;
-  font-size: 27px;
+  font-size: min(4.5vw, 27px);
 }
 
 /*Project Tags*/
 .project-info-tags {
   float: top;
   margin-top: 7px;
-  width: 100%;
+  width: fit-content;
 }
 
 .project-info-description {

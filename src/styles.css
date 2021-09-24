@@ -6,8 +6,8 @@
 
 html {
   scroll-behavior: smooth;
-  width: 100%;
-  height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*::-webkit-scrollbar {*/
@@ -18,12 +18,16 @@ body {
   width: 100%;
   height: auto;
   overflow-x: hidden;
-  overflow-y: scroll;
   background: linear-gradient(to bottom left, #001d27, #00171f) no-repeat fixed;
-  min-width: 320px;
-  min-height: 453px;
+  /*min-width: 320px;*/
+  /*min-height: 453px;*/
   display: block;
   font-family: 'PT Sans', sans-serif;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 1000px) {
 }
 
 .project-anchor {

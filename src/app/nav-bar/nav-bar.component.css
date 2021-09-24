@@ -16,6 +16,8 @@ nav {
 .nav-list {
   list-style: none;
   display: flex;
+  right: 50px;
+  position: absolute;
 }
 
 .nav-list li {
@@ -76,15 +78,11 @@ nav {
   width: 32px;
   height: 2px;
   background: aliceblue;
-  margin: 8px;
+  margin: 7px;
   transition: 0.3s;
 }
 
-@media (max-width: 1000px) {
-  body{
-    overflow-x: hidden;
-  }
-
+@media screen and (max-width: 768px) {
   .nav-list {
     position: absolute;
     top: 6vh;
@@ -94,9 +92,11 @@ nav {
     background-color: rgba(0, 0, 0, 0.95);
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: space-around;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
+    overflow-x: hidden;
   }
 
   .nav-list li {
@@ -112,6 +112,7 @@ nav {
     display: block;
     position: absolute;
     right: 10vw;
+    overflow-x: hidden;
   }
 }
 
@@ -139,5 +140,5 @@ nav {
 }
 
 .mobile-menu.active .line3 {
-  transform: rotate(45deg) translate(-5px, -7px);
+  transform: rotate(45deg) translate(-4px, -8px);
 }
