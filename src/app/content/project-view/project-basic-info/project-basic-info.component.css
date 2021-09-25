@@ -1,19 +1,24 @@
 .project-basic-info {
   color: white;
+  margin: 10px;
 }
 
 .project-basic-info table {
   background-color: rgba(0, 0, 0, 0.3);
-  margin: auto;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .project-basic-info table tr td {
   padding: 5px;
   font-size: 20px;
   text-shadow: 4px 2px 2px #222222;
+}
+
+@media (max-width: 768px) {
+  .project-basic-info table tr td {
+    font-size: 17px;
+  }
 }

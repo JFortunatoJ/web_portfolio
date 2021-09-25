@@ -89,7 +89,7 @@
   pointer-events: none;
   color: white;
   text-transform: uppercase;
-  font-size: min(4.5vw, 27px);
+  font-size: 7vw
 }
 
 /*Project Tags*/
