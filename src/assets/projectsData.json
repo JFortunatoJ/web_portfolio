@@ -2,6 +2,40 @@
   "MainScreenInfo": {
     "ProfessionalProjects": [
       {
+        "name": "Button Soccer Arena",
+        "description": "",
+        "thumbUrl": "buttonSoccer",
+        "tags": [
+          "Unity",
+          "C#",
+          "Mobile",
+          "2D",
+          "3D"
+        ],
+        "contributions": [
+          "Gameplay Mechanics",
+          "Level Editor",
+          "Implementation of Animations",
+          "Optimization"
+        ],
+        "categories": [
+          "Casual"
+        ],
+        "platforms": [
+          "Mobile"
+        ],
+        "engine": "Unity",
+        "languages": [
+          "C#"
+        ],
+        "access": [
+          {
+            "type": 1,
+            "url": "https://play.google.com/store/apps/details?id=com.liga.buttonsoccerarena"
+          }
+        ]
+      },
+      {
         "name": "Road Star",
         "description": "is a 3D mobile racing game with slot car mechanics based on the famous Brazilian rock band Mamonas Assassinas.",
         "thumbUrl": "roadstar",

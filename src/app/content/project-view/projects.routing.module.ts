@@ -4,6 +4,7 @@ import {NgModule} from '@angular/core';
 
 import {ProjectViewBaseComponent} from './project-view-base.component';
 import {UnderConstructionComponent} from './under-construction/under-construction.component';
+import {HeroisPandemiaComponent} from '../project-view/herois-pandemia/herois-pandemia.component';
 import {PrivacyPolicyComponent} from '../../privacy-policies/bouce-light/privacy-policy.component';
 
 const PROJECTS_ROUTES: Routes = [
@@ -17,7 +18,7 @@ const PROJECTS_ROUTES: Routes = [
       },
       {
         path: 'heroispandemia',
-        component: UnderConstructionComponent,
+        component: HeroisPandemiaComponent,
         data: {id: 'heroispandemia'}
       },
       {

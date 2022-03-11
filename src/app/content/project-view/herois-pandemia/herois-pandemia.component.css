@@ -1,27 +1,44 @@
 .content{
   background-color: rgba(0,0,0,0.3);
   width: 65%;
-  margin: 0 auto;
+  height: fit-content;
+  margin: 10px auto;
   border-radius: 10px;
   font-family: 'PT Sans', sans-serif;
+  display: block;
+}
+
+@media (max-width: 768px){
+  .content{
+    width: 90vw;
+  }
+
+  .project-description {
+    padding: 20px 5vw;
+  }
 }
 
 .project-description {
   color: white;
   margin-left: 0;
   margin-right: 0;
-  padding: 20px 50px;
+  padding: 20px 2vw;
 }
 
 .project-description-about {
-  font-size: 22px;
+  font-size: 30px;
   text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
 }
 
 .project-description-text {
   text-align: justify;
-  font-size: 15px;
+  font-size: 18px;
+}
+
+.sub-section{
+  font-weight: bold;
 }
 
 .project-description-text ul {
@@ -41,14 +58,13 @@
   display: grid;
   grid-row-gap: 50px;
   grid-template-columns: repeat(auto-fit, minmax(100px, 350px));
-
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   justify-items: center;
 }
 
 .project-screenshot{
-  max-height: 550px;
+  max-height: 500px;
   width: auto;
   border: 5px solid white;
   border-radius: 5px;
@@ -66,11 +82,29 @@
 }
 
 .login-ranking-image{
-  max-height: 550px;
+  max-height: 500px;
   width: auto;
   border: 5px solid white;
   border-radius: 5px;
   margin: 0 auto;
+}
+
+.section-sprite-atlas div{
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 350px));
+}
+
+.section-sprite-atlas div img{
+  width: auto;
+  height: 450px;
+  border-radius: 5px;
+  border: 5px solid white;
 }
 
 .config{

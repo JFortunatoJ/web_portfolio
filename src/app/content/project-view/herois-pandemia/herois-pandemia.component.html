@@ -1,8 +1,8 @@
 <div class="content">
   <div class="project-description">
-    <label class="project-description-about">Sobre</label>
+    <p class="project-description-about">Sobre</p>
     <div class="project-description-text">
-      <label>O jogo gratuito Heróis da
+      <label>O jogo Heróis da
         Pandemia tem como objetivo conscientizar o público sobre a propagação
         da COVID-19 de forma didática e divertida. Desenvolvido pelo Centro
         Universitário Facens em parceria com o Centro Universitário Newton
@@ -32,77 +32,5 @@
     <img class="project-screenshot" *ngFor="let url of imagesUrl" src="{{url}}">
   </div>
   <!--<app-image-carousel [imagesUrls]="imagesUrl"></app-image-carousel>-->
-  <div class="project-description">
-    <label class="project-description-about">Porte para Web GL</label>
-    <div class="project-description-text">
-      <p>
-        O jogo foi inicialmente desenvolvido para dispositivos móveis (Android e iOS), porém para facilitar a
-        acessibilidade, decidimos portá-lo para Web, não sendo
-        necessário realizar download direto, sendo possível jogá-lo tanto do navegador de um computador quanto de um
-        celular.
-      </p>
-      <br>
-      <p>
-        O principal desafio foi otimizar o jogo para dispositivos móveis, porque até então o SDK Web GL da Unity não
-        possui suporte para ser executado em celulares, como resultado,
-        enquanto no navegador do computador o jogo executava com tranquilidade, em dispositivos móveis o framerate caía
-        drasticamente, sendo praticamente injogável em alguns casos. Eu com os meus colegas então
-        passamos alguns bons dias pesquisando, testando e gerando <strong>muitas</strong> builds, e como há
-        relativamente pouco conteúdo na internet sobre o tema e essa foi basicamente nossa primeira experiência no
-        desenvolvimento de um jogo para Web GL utilizando Unity e que precisaria funcionar em dispositivos móveis, fomos
-        progredindo na base da tentativa e erro. Chegamos a cogitar em desenvolver o jogo
-        utilizando outra engine como Play Canvas que é totalmente focada em jogos para web, porém o prazo de entrega não
-        seria suficiente para aprendermos uma nova engine e desenvolver o jogo novamente nela.
-      </p>
-      <br>
-      <p>
-        Por fim conseguimos acertar na otimização do jogo e entregar dentro do prazo. Apesar das dificuldades, foi um
-        ótimo aprendizado que nos ensinou muito
-        sobre builds Web GL utilizando a Unity, as configurações necessárias e práticas de desenvolvimento e interação
-        com os colegas que ajudam a agilizar o trabalho.
-      </p>
-      <img src="assets/images/herois-pandemia/config.png" class="config">
-    </div>
-  </div>
-  <div class="project-description">
-    <label class="project-description-about">Login com Facebook e Ranking</label>
-    <div class="project-description-text">
-      <p>O login com o Facebook foi utilizado para salvar os dados do jogador e para que o mesmo tenha acesso ao
-        Ranking Global de Jogadores.</p>
-      <p>O processo é dividido em duas etapas: na primeira o jogador realiza o login com o facebook no qual é
-        adquirido o token de acesso, na segunda etapa é feita a autenticação com o backend do jogo utilizando
-        o token do Facebook do jogador para identificá-lo e conseguir a sua lista de amigos que também jogam o jogo
-        para popular o ranking de amigos.</p>
-    </div>
-    <div class="login-ranking">
-      <img class="login-ranking-image" src="assets/images/herois-pandemia/heroisPandemia_12.jpg">
-      <img class="login-ranking-image" src="assets/images/herois-pandemia/heroisPandemia_14.jpg">
-    </div>
-  </div>
-  <div class="project-description">
-    <label class="project-description-about">Otimização</label>
-    <div class="project-description-text">
-      <p>Ao gerarmos a primeira build para Web GL percebemos que o desempenho estava muito abaixo se comparado com a build para Android, principalmente porque até então builds Web GL feitas na Unity não são
-      otimizadas para dispositivos móveis. Então eu fiquei responsável por boa parte das otimizações necessárias para que o jogo executasse com fluidez em dispositivos móveis.</p>
-      <p>As principais otimizações no jogo foram:</p>
-      <br>
-      <div>
-        <p>Sprite Atlas</p>
-        <p>Usados para diminuirem a quantidade de Draw Calls e tornar mais prático a compressão pela Unity</p>
-        <img src="assets/images/herois-pandemia/heroisPandemia_atlas.png">
-      </div>
-      <div>
-        <p>Compressão de imagens</p>
-        <p>Percebi que algumas imagens eram desnecessariamente grandes, ocupando um grande espaço tanto em disco quanto em RAM. Então diminui o tamanho das imagens em um software de edição e ajustei as
-        configurações de compressão para que consumissem a menor quantidade de RAM possível sem que perdessem visivelmente a qualidade.</p>
-        <img src="assets/images/herois-pandemia/heroisPandemia_compression.png">
-      </div>
-      <div>
-        <p>Scripts</p>
-        <p>Foi necessária a otimização e aplicação de boas práticas em alguns scripts do jogo, visando principalmente diminuir o processamento necessário para executá-los.</p>
-        <p>Toda a otimização que fiz no código pode se resumir em guardar valores em cache e evitar realizar processamentos desnecessários ou em momentos desnecessários.</p>
-      </div>
-    </div>
-  </div>
 </div>
 

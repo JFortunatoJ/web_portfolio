@@ -24,16 +24,15 @@ export class ProjectElementComponent implements OnInit {
     this.projectName.forEach(box => {
       box.style.fontSize = this.getFontSize(box.textContent.length);
     });
-
   }
 
   getFontSize(textLength): string {
-    const baseSize = 7;
+    const baseSize = 27;
     const baseTextLength = 13;
     if (textLength > baseTextLength) {
-      return `${((baseTextLength * baseSize) / textLength) + 1}vw`;
+      return `${((baseTextLength * baseSize) / textLength) + 1}px`;
     } else {
-      return `${baseSize}vw`;
+      return `${baseSize}px`;
     }
   }
 }

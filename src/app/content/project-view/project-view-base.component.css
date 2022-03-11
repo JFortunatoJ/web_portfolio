@@ -26,7 +26,7 @@
 
 /deep/ .project-info {
   width: 95vw;
-  height: 90vh;
+  height: fit-content;
   margin: 10px auto;
   padding-top: 1px;
   display: block;
@@ -36,7 +36,7 @@
 }
 
 /deep/ .project-access {
-  background: linear-gradient(to bottom left, #007ea7, #006288) no-repeat fixed;
+  /*background: linear-gradient(to bottom left, #007ea7, #006288) no-repeat fixed;*/
   border-radius: 10px;
   padding: 10px;
   margin: 10px auto;
@@ -44,7 +44,21 @@
   display: grid;
   grid-gap: 50px;
   grid-auto-flow: column dense;
-  justify-content: space-evenly;
+
+}
+
+fieldset{
+  border: 2px solid white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  grid-area: 1 / 1; /* first row, first column */
+  padding: 20px;
+  /*width: inherit;*/
+}
+
+legend{
+  color: white;
+  font-size: 20px;
 }
 
 @media (max-width: 768px) {
