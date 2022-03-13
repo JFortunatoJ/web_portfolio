@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 
 import {ProjectsRoutingModule} from './projects.routing.module';
@@ -20,12 +20,12 @@ import {ImageCarouselComponent} from '../../image-carousel/image-carousel.compon
     HeroisPandemiaComponent,
     UnderConstructionComponent
   ],
-  exports: [
-  ],
+  exports: [],
   imports: [
     CommonModule,
     ProjectsRoutingModule,
     FormsModule
   ]
 })
-export class ProjectsViewModule {}
+export class ProjectsViewModule {
+}

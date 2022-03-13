@@ -1,0 +1,96 @@
+.modal {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #333;
+  min-width: 320px;
+  position: fixed;
+  left: 50%;
+  padding: 24px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+  max-width: 50vw;
+  max-height: 80vh;
+}
+
+.overlay {
+  background: #000;
+  height: 100vh;
+  left: 0;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+}
+
+/deep/ .project-name {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 95%;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+  border-radius: 10px;
+  background: linear-gradient(to bottom left, #00a8e8, #005f90);
+  /*background-color: #00a8e8;*/
+}
+
+.project-name label {
+  color: white;
+  font-size: 40px;
+  text-shadow: 4px 2px 2px #222222;
+}
+
+/deep/ .project-info {
+  width: 95vw;
+  height: fit-content;
+  margin: 10px auto;
+  padding-top: 1px;
+  display: block;
+  border-radius: 10px;
+  background: linear-gradient(to bottom left, #003459, #002a4d) no-repeat fixed;
+  background-size: 100%;
+}
+
+/deep/ .project-access {
+  /*background: linear-gradient(to bottom left, #007ea7, #006288) no-repeat fixed;*/
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px auto;
+  width: max-content;
+  display: grid;
+  grid-gap: 50px;
+  grid-auto-flow: column dense;
+
+}
+
+fieldset{
+  border: 2px solid white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  grid-area: 1 / 1; /* first row, first column */
+  padding: 20px;
+  /*width: inherit;*/
+}
+
+legend{
+  color: white;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  /deep/ .project-name {
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .project-name label {
+    /*margin: auto;*/
+    width: 100%;
+    height: 100%;
+    font-size: min(8vh, 6.5vw);
+  }
+}
+

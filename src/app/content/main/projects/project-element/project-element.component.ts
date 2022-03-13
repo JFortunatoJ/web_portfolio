@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Router} from '@angular/router';
+import {Observable} from 'rxjs';
 import {Project} from '../../../shared/project';
+import {ProjectViewService} from '../../index/project-view.service';
 
 @Component({
   selector: 'app-project-element',
@@ -14,11 +15,10 @@ export class ProjectElementComponent implements OnInit {
 
   private projectName: any;
 
-  constructor(private router: Router) {
+  constructor(private projectViewService: ProjectViewService) {
   }
 
   ngOnInit(): void {
-
     this.projectName = document.querySelectorAll('.project-name label');
 
     this.projectName.forEach(box => {
@@ -34,5 +34,9 @@ export class ProjectElementComponent implements OnInit {
     } else {
       return `${baseSize}px`;
     }
+  }
+
+  public onClickProject(): void {
+    this.projectViewService.openProject(this.project);
   }
 }
