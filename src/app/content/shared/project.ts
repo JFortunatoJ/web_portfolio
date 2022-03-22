@@ -4,6 +4,7 @@ export class Project{
   name: string;
   description: string;
   thumbUrl: string;
+  videoUrl: string;
   tags: string[];
   contributions: string[];
   categories: string[];

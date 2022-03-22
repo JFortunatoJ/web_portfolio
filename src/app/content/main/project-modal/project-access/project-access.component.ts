@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {AccessOption, ProjectType} from '../../shared/accessOption';
+import {AccessOption, ProjectType} from 'src/app/content/shared/accessOption';
 
 @Component({
   selector: 'app-access',

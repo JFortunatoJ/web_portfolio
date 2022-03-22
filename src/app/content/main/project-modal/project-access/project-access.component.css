@@ -1,8 +1,8 @@
 img{
   width: 40px;
   height: auto;
-  display: block;
   transition: all 0.15s;
+  margin: auto auto;
 }
 
 img:hover {

@@ -1,0 +1,26 @@
+<ng-container *ngIf="isVisible">
+  <div class="modal" @modal>
+    <div class="project-name">
+      <label>{{project?.name}}</label>
+    </div>
+    <app-project-view-base></app-project-view-base>
+    <div class="project-info">
+      <div class="project-access" *ngIf="project?.access.length > 0">
+        <fieldset>
+          <legend>Acesse aqui</legend>
+          <div class="access-options">
+            <app-access *ngFor="let access of project?.access" [accessOptions]="access"></app-access>
+          </div>
+        </fieldset>
+      </div>
+      <div class="description">
+        <p>
+          Quintal Uirapuru it's an yard management game made to Colégio Uirapuru where your goal is to stimulate, in a
+          playful and implicit way, the reinforcement of the subjects passed in class through exercises and puzzles,
+          integrating the virtual yard (game) with the real Yard of the school.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div (click)="setVisibility(false)" class="overlay" @overlay></div>
+</ng-container>

@@ -4,7 +4,6 @@ import {NgModule} from '@angular/core';
 
 import {ProjectViewBaseComponent} from './project-view-base.component';
 import {UnderConstructionComponent} from './under-construction/under-construction.component';
-import {ProjectModalComponent} from 'src/app/content/main/project-modal/project-modal.component';
 import {HeroisPandemiaComponent} from '../project-view/herois-pandemia/herois-pandemia.component';
 import {PrivacyPolicyComponent} from '../../privacy-policies/bouce-light/privacy-policy.component';
 

@@ -7,7 +7,9 @@ import {ProjectsComponent} from '../projects/base/projects.component';
 import {ProjectElementComponent} from '../projects/project-element/project-element.component';
 import {ProjectTagComponent} from '../projects/project-element/project-tag/project-tag.component';
 import {RouterModule} from '@angular/router';
-import {ProjectModalComponent} from '../project-modal/project-modal.component';
+import {ProjectModalComponent} from '../project-modal/base/project-modal.component';
+import {ProjectBasicInfoComponent} from 'src/app/content/main/project-modal/project-basic-info/project-basic-info.component';
+import {ProjectAccessComponent} from 'src/app/content/main/project-modal/project-access/project-access.component';
 
 @NgModule({
   imports: [
@@ -18,7 +20,9 @@ import {ProjectModalComponent} from '../project-modal/project-modal.component';
     AboutmeComponent,
     VideoComponent,
     ProjectsComponent,
-    ProjectModalComponent
+    ProjectModalComponent,
+    ProjectBasicInfoComponent,
+    ProjectAccessComponent
   ],
   declarations: [
     AboutmeComponent,
@@ -26,7 +30,9 @@ import {ProjectModalComponent} from '../project-modal/project-modal.component';
     ProjectsComponent,
     ProjectElementComponent,
     ProjectTagComponent,
-    ProjectModalComponent
+    ProjectModalComponent,
+    ProjectBasicInfoComponent,
+    ProjectAccessComponent
   ]
 })
 export class IndexModule {

@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import { ContentProjectsService} from './content-projects.service';
+import {ContentProjectsService} from './content-projects.service';
 import {Subscription} from 'rxjs';
 import {Project} from '../../../shared/project';
 
@@ -8,7 +8,7 @@ import {Project} from '../../../shared/project';
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css']
 })
-export class ProjectsComponent implements OnInit, OnDestroy{
+export class ProjectsComponent implements OnInit, OnDestroy {
 
   public professionalProjects: Project[];
   public personalProjects: Project[];

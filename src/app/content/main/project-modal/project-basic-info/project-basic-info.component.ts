@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {Project} from '../../shared/project';
+import {Project} from 'src/app/content/shared/project';
 
 @Component({
   selector: 'app-info',
@@ -8,7 +8,6 @@ import {Project} from '../../shared/project';
 })
 export class ProjectBasicInfoComponent {
 
-  // tslint:disable-next-line:no-input-rename
   @Input()
   public project: Project;
 
