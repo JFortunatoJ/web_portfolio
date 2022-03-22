@@ -12,7 +12,7 @@ import {IndexModule} from '../content/main/index/index.module';
 import {IndexComponent} from '../content/main/index/index.component';
 import {PrivacyPolicyComponent} from '../privacy-policies/bouce-light/privacy-policy.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {YouTubePlayerModule} from "@angular/youtube-player";
+// import {YouTubePlayerModule} from "@angular/youtube-player";
 
 @NgModule({
   declarations: [
@@ -29,7 +29,7 @@ import {YouTubePlayerModule} from "@angular/youtube-player";
     IndexModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    YouTubePlayerModule
+    // YouTubePlayerModule
   ],
   providers: [],
   exports: [],
