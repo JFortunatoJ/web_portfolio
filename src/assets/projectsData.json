@@ -4,6 +4,7 @@
       {
         "name": "Button Soccer Arena",
         "description": "",
+        "fullDescription": "Pipoca não nasce em árvore!",
         "thumbUrl": "buttonSoccer",
         "videoUrl": "",
         "tags": [
@@ -38,6 +39,7 @@
       {
         "name": "Road Star",
         "description": "is a 3D mobile racing game with slot car mechanics based on the famous Brazilian rock band Mamonas Assassinas.",
+        "fullDescription": "",
         "thumbUrl": "roadstar",
         "videoUrl": "",
         "tags": [
@@ -68,6 +70,7 @@
       {
         "name": "Heróis da Pandemia",
         "description": "seeks through a playful way to pass prevention guidelines to COVID-19 following the recommendations of the brazilian Ministry of Health.",
+        "fullDescription": "",
         "thumbUrl": "heroispandemia",
         "videoUrl": "",
         "tags": [
@@ -106,6 +109,7 @@
       {
         "name": "Joy & Toy",
         "description": "it is a 2D sidescroller endless runner mixed with a lane-runner style game akin to Sonic based on a famous brazilian children's tv series.",
+        "fullDescription": "",
         "thumbUrl": "joytoy",
         "videoUrl": "",
         "tags": [
@@ -143,6 +147,7 @@
       {
         "name": "Trader Life",
         "description": "is a 2D/3D game in which its goal is to make newcomers to the trade business feel more comfortable with dealing with all the brokerage jargon and applications that may sometimes seem daunting.",
+        "fullDescription": "",
         "thumbUrl": "traderlife",
         "videoUrl": "",
         "tags": [
@@ -185,6 +190,7 @@
       {
         "name": "Un Viaje Por América del Sur 2",
         "description": "it's a 'point and click' adventure game developed for the practice of the Spanish language in the Colégio Bandeirantes.",
+        "fullDescription": "",
         "thumbUrl": "bandeirantes2",
         "videoUrl": "",
         "tags": [
@@ -243,6 +249,7 @@
       {
         "name": "Quintal Uirapuru",
         "description": "it's an yard management game made to Colégio Uirapuru where your goal is to stimulate, in a playful and implicit way, the reinforcement of the subjects passed in class through exercises and puzzles, integrating the virtual yard (game) with the real Yard of the school.",
+        "fullDescription": "",
         "thumbUrl": "uirapuru",
         "videoUrl": "",
         "tags": [
@@ -272,6 +279,7 @@
       {
         "name": "Senninha AR",
         "description": "it's an AR experience based on the children's book 'Senninha - In the World of Enchanted Words'.",
+        "fullDescription": "",
         "thumbUrl": "senninhaAR",
         "videoUrl": "",
         "tags": [
@@ -301,6 +309,7 @@
       {
         "name": "Bounce 'n' Light",
         "description": "is a 2D arcade/puzzle game that combines the playability of table hockey and mini-golf.",
+        "fullDescription": "",
         "thumbUrl": "bouncelight",
         "videoUrl": "",
         "tags": [
@@ -333,6 +342,7 @@
       {
         "name": "Carla",
         "description": "it's an third person educational game, about a dreamy blind girl who needs to help her father find some lost letters.",
+        "fullDescription": "",
         "thumbUrl": "carla",
         "videoUrl": "",
         "tags": [
@@ -366,6 +376,7 @@
       {
         "name": "Alpha Core",
         "description": "it's a Deathmatch FPS in teams where the goals are to eliminate the opposing team or to be the first to collect a relic in the center of the maze, the Alpha Core.",
+        "fullDescription": "",
         "thumbUrl": "alphacore",
         "videoUrl": "",
         "tags": [
@@ -397,6 +408,7 @@
       {
         "name": "Centipede Combat",
         "description": "it's an arcade game inspired by two classic atari games.",
+        "fullDescription": "",
         "thumbUrl": "centipedecombat",
         "videoUrl": "",
         "tags": [
