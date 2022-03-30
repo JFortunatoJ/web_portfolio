@@ -4,9 +4,9 @@
       {
         "name": "Button Soccer Arena",
         "description": "",
-        "fullDescription": "Pipoca não nasce em árvore!",
+        "fullDescription": "My name is João Fortunato Jr, I am a game developer and I live in Brazil. I decided in mid-2012 that I would turn my passion for games into my profession so I started to study and develop simple projects using Unity Engine. In 2014 I graduated from high school, in 2015 in technical education in computer science, where I had my first solid contact with programming, and in 2016 i started my Digital Games degree at FACENS, graduating in 2018 when I started working as a unity developer. I love learning new things and challenges motivate me, I always try to develop the projects in which I participate in the best possible way, worrying not only about the development but also the management.My name is João Fortunato Jr, I am a game developer and I live in Brazil. I decided in mid-2012 that I would turn my passion for games into my profession so I started to study and develop simple projects using Unity Engine. In 2014 I graduated from high school, in 2015 in technical education in computer science, where I had my first solid contact with programming, and in 2016 i started my Digital Games degree at FACENS, graduating in 2018 when I started working as a unity developer. I love learning new things and challenges motivate me, I always try to develop the projects in which I participate in the best possible way, worrying not only about the development but also the management.My name is João Fortunato Jr, I am a game developer and I live in Brazil. I decided in mid-2012 that I would turn my passion for games into my profession so I started to study and develop simple projects using Unity Engine. In 2014 I graduated from high school, in 2015 in technical education in computer science, where I had my first solid contact with programming, and in 2016 i started my Digital Games degree at FACENS, graduating in 2018 when I started working as a unity developer. I love learning new things and challenges motivate me, I always try to develop the projects in which I participate in the best possible way, worrying not only about the development but also the management.",
         "thumbUrl": "buttonSoccer",
-        "videoUrl": "",
+        "videoUrl": "GYAB4Td62zI",
         "tags": [
           "Unity",
           "C#",
@@ -31,7 +31,7 @@
         ],
         "access": [
           {
-            "type": 1,
+            "type": 0,
             "url": "https://play.google.com/store/apps/details?id=com.liga.buttonsoccerarena"
           }
         ]

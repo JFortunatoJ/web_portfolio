@@ -1,29 +1,27 @@
-<ng-container *ngIf="isVisible">
-  <div class="modal" @modal>
+<ng-container *ngIf="isVisible" class="container">
+  <div class="modal" @modal #modal>
     <div class="project-name">
       <label>{{project?.name}}</label>
     </div>
     <app-project-view-base></app-project-view-base>
     <div class="project-info">
-      <div class="project-access" *ngIf="project?.access.length > 0">
-        <fieldset>
-          <legend>Acesse aqui</legend>
-          <div class="access-options">
-            <app-access *ngFor="let access of project?.access" [accessOptions]="access"></app-access>
-          </div>
-        </fieldset>
-      </div>
-      <youtube-player
-        videoId="GYAB4Td62zI"
-        suggestedQuality="highres"
-        [height]="250"
-        [width]="500"
-        [startSeconds]="4"
-        [endSeconds]="8">
-      </youtube-player>
-      <div class="description">
-        <p>{{project?.fullDescription}}</p>
-      </div>
+        <div class="project-access" *ngIf="project?.access.length > 0">
+          <fieldset>
+            <legend>Acesse aqui</legend>
+            <div class="access-options">
+              <app-access *ngFor="let access of project?.access" [accessOptions]="access"></app-access>
+            </div>
+          </fieldset>
+        </div>
+        <div #youtubePlayer class="youtubePlayer" id="youtubePlayer">
+          <section>
+            <youtube-player videoId="{{project?.videoUrl}}" suggestedQuality="default" [width]="videoWidth"
+                            [height]="videoHeight"></youtube-player>
+          </section>
+        </div>
+        <div class="description">
+          <p>{{project?.fullDescription}}</p>
+        </div>
     </div>
   </div>
   <div (click)="setVisibility(false)" class="overlay" @overlay></div>

@@ -11,11 +11,14 @@ import {ProjectModalComponent} from '../project-modal/base/project-modal.compone
 import {ProjectBasicInfoComponent} from 'src/app/content/main/project-modal/project-basic-info/project-basic-info.component';
 import {ProjectAccessComponent} from 'src/app/content/main/project-modal/project-access/project-access.component';
 
+import {YouTubePlayerModule} from "@angular/youtube-player";
+
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    YouTubePlayerModule
   ],
   exports: [
     AboutmeComponent,

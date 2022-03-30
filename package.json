@@ -20,13 +20,14 @@
     "@angular/platform-browser": "^13.3.0",
     "@angular/platform-browser-dynamic": "^13.3.0",
     "@angular/router": "^13.3.0",
+    "@angular/youtube-player": "^13.3.0",
     "firebase": "^9.4.0",
     "phaser": "^3.55.2",
     "phaser3-nineslice": "^0.5.0",
+    "rxfire": "^6.0.0",
     "rxjs": "^6.6.7",
     "tslib": "^2.3.1",
-    "zone.js": "~0.11.5",
-    "rxfire": "^6.0.0"
+    "zone.js": "~0.11.5"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^13.3.0",

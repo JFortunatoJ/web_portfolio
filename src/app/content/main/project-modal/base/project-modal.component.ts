@@ -1,4 +1,14 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {
+  AfterViewInit,
+  ChangeDetectorRef,
+  Component,
+  Input,
+  OnInit,
+  ElementRef,
+  OnDestroy,
+  ViewChild,
+  ViewChildren
+} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {Subscription} from 'rxjs';
 import {Project} from 'src/app/content/shared/project';
@@ -52,13 +62,24 @@ import {
   ]
 })
 export class ProjectModalComponent implements OnInit {
+  modal: ElementRef<HTMLDivElement>;
+''
+  @ViewChild('modal') set content(content: ElementRef<HTMLDivElement>) {
+    if (content) { // initially setter gets called with undefined
+      this.modal = content;
+      this.onResize();
+    }
+  }
+
+  videoWidth: number | undefined;
+  videoHeight: number | undefined;
 
   public project: Project;
   public isVisible: boolean = false;
 
   private getProject: Subscription;
 
-  constructor(private projectViewService: ProjectViewService) {
+  constructor(private projectViewService: ProjectViewService, private _changeDetectorRef: ChangeDetectorRef) {
     this.getProject = projectViewService.projectView$.subscribe(
       project => {
         this.showProject(project);
@@ -70,7 +91,12 @@ export class ProjectModalComponent implements OnInit {
     window.scroll(0, 0);
   }
 
+  ngAfterViewInit(): void {
+    window.addEventListener('resize', this.onResize);
+  }
+
   ngOnDestroy(): void {
+    window.removeEventListener('resize', this.onResize);
     this.getProject.unsubscribe();
   }
 
@@ -81,5 +107,12 @@ export class ProjectModalComponent implements OnInit {
 
   public setVisibility(status: boolean): void {
     this.isVisible = status;
+  }
+
+   onResize = (): void => {
+    // Automatically expand the video to fit the page up to 1200px x 720px
+    this.videoWidth = this.modal.nativeElement.clientWidth * 0.75;
+    this.videoHeight = this.videoWidth * 0.6;
+    this._changeDetectorRef.detectChanges();
   }
 }

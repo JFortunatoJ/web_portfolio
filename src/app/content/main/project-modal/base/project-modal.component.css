@@ -1,3 +1,7 @@
+.container {
+
+}
+
 .overlay {
   background: #000;
   height: 100vh;
@@ -17,25 +21,24 @@
   padding: 20px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -47%);
   z-index: 11;
-  max-height: 80%;
+  max-height: 87%;
   min-height: 50%;
-  max-width: 60%;
-  min-width: 40%;
+  width: 50vw;
+  overflow: auto;
 }
 
-/deep/ .project-name {
+.project-name {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  width: 95%;
+  width: 99%;
   height: 65px;
   line-height: 65px;
   text-align: center;
   border-radius: 10px;
-  background: linear-gradient(to bottom left, #003459, #002a4d) no-repeat fixed;
-  /*background-color: #00a8e8;*/
+  background: #002a4d;
 }
 
 .project-name label {
@@ -44,21 +47,18 @@
   text-shadow: 4px 2px 2px #222222;
 }
 
-/deep/ .project-info {
-  width: 95%;
-  min-height: 25px;
-  height: fit-content;
+.project-info {
+  width: 99%;
+  height: 100%;
   margin: 10px auto;
-  /*padding-top: 1px;*/
   padding-bottom: 2px;
   display: block;
   border-radius: 10px;
-  background: linear-gradient(to bottom left, #003459, #002a4d) no-repeat fixed;
-  background-size: 100%;
+  background: #002a4d;
+  position: static;
 }
 
-/deep/ .project-access {
-  /*background: linear-gradient(to bottom left, #007ea7, #006288) no-repeat fixed;*/
+.project-access {
   border-radius: 10px;
   padding: 10px;
   margin: 10px auto;
@@ -70,9 +70,8 @@ fieldset{
   border-radius: 10px;
   box-sizing: border-box;
   grid-area: 1 / 1; /* first row, first column */
-  padding: 10px;
+  padding: 7px;
   /*width: inherit;*/
-
 }
 
 .access-options{
@@ -83,7 +82,13 @@ fieldset{
 
 legend{
   color: white;
-  font-size: 20px;
+  font-size: 17px;
+}
+
+.youtubePlayer{
+  margin: auto auto;
+  width: fit-content;
+  border-radius: 10px;
 }
 
 .description{
@@ -103,6 +108,15 @@ legend{
     width: 100%;
     height: 100%;
     font-size: min(8vh, 6.5vw);
+  }
+
+  .modal{
+    width: 80vw;
+    max-height: 80%;
+  }
+
+  .description{
+    font-size: 17px;
   }
 }
 
