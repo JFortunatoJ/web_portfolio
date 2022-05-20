@@ -85,7 +85,12 @@ legend{
   font-size: 17px;
 }
 
+.youtube{
+
+}
+
 .youtubePlayer{
+  padding-top: 15px;
   margin: auto auto;
   width: fit-content;
   border-radius: 10px;
