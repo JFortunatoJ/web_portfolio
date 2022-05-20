@@ -1,0 +1,13 @@
+img{
+  width: 35px;
+  height: auto;
+  transition: all 0.15s;
+  margin: auto auto;
+}
+
+img:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.30));
+}

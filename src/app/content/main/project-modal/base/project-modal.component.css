@@ -1,0 +1,127 @@
+.container {
+
+}
+
+.overlay {
+  background: #000;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.modal {
+  background: linear-gradient(to bottom left, #003459, #004066);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #333;
+  position: fixed;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -47%);
+  z-index: 11;
+  max-height: 87%;
+  min-height: 50%;
+  width: 50vw;
+  overflow: auto;
+}
+
+.project-name {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 99%;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+  border-radius: 10px;
+  background: #002a4d;
+}
+
+.project-name label {
+  color: white;
+  font-size: 40px;
+  text-shadow: 4px 2px 2px #222222;
+}
+
+.project-info {
+  width: 99%;
+  height: 100%;
+  margin: 10px auto;
+  padding-bottom: 2px;
+  display: block;
+  border-radius: 10px;
+  background: #002a4d;
+  position: static;
+}
+
+.project-access {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px auto;
+  width: max-content;
+}
+
+fieldset{
+  border: 2px solid white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  grid-area: 1 / 1; /* first row, first column */
+  padding: 7px;
+  /*width: inherit;*/
+}
+
+.access-options{
+  justify-content: space-around;
+  display: grid;
+  grid-auto-flow: column dense;
+}
+
+legend{
+  color: white;
+  font-size: 17px;
+}
+
+.youtube{
+
+}
+
+.youtubePlayer{
+  padding-top: 15px;
+  margin: auto auto;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+.description{
+  color: white;
+  font-size: 20px;
+  padding: 15px 15px;
+}
+
+@media (max-width: 768px) {
+  /deep/ .project-name {
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .project-name label {
+    /*margin: auto;*/
+    width: 100%;
+    height: 100%;
+    font-size: min(8vh, 6.5vw);
+  }
+
+  .modal{
+    width: 80vw;
+    max-height: 80%;
+  }
+
+  .description{
+    font-size: 17px;
+  }
+}
+

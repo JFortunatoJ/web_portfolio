@@ -1,5 +1,4 @@
 import {Injectable} from '@angular/core';
-import {AngularFireDatabase} from '@angular/fire/database';
 import {Project} from '../../../shared/project';
 
 import projectsDataFile from 'src/assets/projectsData.json';

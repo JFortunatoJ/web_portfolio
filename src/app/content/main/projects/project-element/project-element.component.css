@@ -27,7 +27,7 @@
   transform: scale(1.1);
 }
 
-.project-info-image a:hover + .project-name {
+.project-info-image img:hover + .project-name {
   opacity: 1;
   transition: opacity 0.3s;
 }
