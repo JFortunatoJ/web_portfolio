@@ -70,7 +70,6 @@
           "Unity",
           "C#",
           "Mobile",
-          "2D",
           "3D"
         ],
         "contributions": [
@@ -134,14 +133,13 @@
       {
         "name": "Heróis da Pandemia",
         "description": "seeks through a playful way to pass prevention guidelines to COVID-19 following the recommendations of the brazilian Ministry of Health.",
-        "fullDescription": "",
+        "fullDescription": "This project was developed in less than a month at the beginning of the COVID-19 pandemic in 2020 and its objective is to pass, in a playful and fun way, prevention guidelines to teach how to protect yourself from the virus. It has seven minigames, each with the goal of teaching a way of prevention for the virus, such as social distancing, hand hygiene, use of masks and others. I was responsible for porting the game to Web GL, by doing the necessary configurations and optimizations, integrating the Facebook SDK for login and saving the user's score and also for the development of the online ranking through the use of a REST API.",
         "thumbUrl": "heroispandemia",
         "videoUrl": "BFVoce8NCRg",
         "tags": [
           "Unity",
           "C#",
           "JavaScript",
-          "Mobile",
           "Web GL"
         ],
         "contributions": [
@@ -172,10 +170,10 @@
       },
       {
         "name": "Joy & Toy",
-        "description": "it is a 2D sidescroller endless runner mixed with a lane-runner style game akin to Sonic based on a famous brazilian children's tv series.",
-        "fullDescription": "",
+        "description": "it is a 2D sidescroller runner mixed with a lane-runner style game akin to Sonic based on a famous brazilian children's tv series.",
+        "fullDescription": "This was the first game developed in partnership with the Brazilian television station SBT and was based on the soap opera 'As Aventuras de Poliana' (The Poliana Adventures). It is a 2D sidescroller runner in which the objective is to reach all the children in the level to make them happy and reach the end of the level before the energy runs out. I was responsible for developing the main gameplay mechanics such as characters movement and implementing their animations, collecting energy orbs and interacting with children. I was also responsible for optimizing the project, as one of our goals was to make it possible to play the game on as many devices as possible.",
         "thumbUrl": "joytoy",
-        "videoUrl": "",
+        "videoUrl": "j5FWzn5U_5k",
         "tags": [
           "Unity",
           "C#",
@@ -211,7 +209,7 @@
       {
         "name": "Trader Life",
         "description": "is a 2D/3D game in which its goal is to make newcomers to the trade business feel more comfortable with dealing with all the brokerage jargon and applications that may sometimes seem daunting.",
-        "fullDescription": "",
+        "fullDescription": "This game was developed for the company specialized in short-term operations in the financial market Atom S/A. The purpose of the game is to be, in a playful and fun way, a gateway for those interested in this world of investments and day trade. I was responsible for basically all the game's programming, like the trading minigames, the house and character mechanics, tutorials, Facebook integration, integration with a REST API and localization for other languages.",
         "thumbUrl": "traderlife",
         "videoUrl": "ABu2Ryy1gd8",
         "tags": [
@@ -252,37 +250,9 @@
         ]
       },
       {
-        "name": "Cave Coaster VR",
-        "description": "is a VR experience based on the game Cave Coaster.",
-        "thumbUrl": "cavecoaster",
-        "videoUrl": "",
-        "tags": [
-          "Unity",
-          "C#",
-          "Windows",
-          "VR"
-        ],
-        "contributions": [
-          "Oculus Rift port",
-          "Optimization"
-        ],
-        "categories": [
-          "VR Experience"
-        ],
-        "platforms": [
-          "Windows"
-        ],
-        "engine": "Unity",
-        "languages": [
-          "C#"
-        ],
-        "access": [
-        ]
-      },
-      {
         "name": "Quintal Uirapuru",
         "description": "it's an yard management game made to Colégio Uirapuru where your goal is to stimulate, in a playful way, the reinforcement of the subjects passed in class through exercises and puzzles.",
-        "fullDescription": "I was responsible for the development of the game in its initial phase, creating the basis for another developer to take over the development, I was responsible for developing the tile system and the movement system for the farm animals, applying the A* pathfinding algorithm.",
+        "fullDescription": "This was one the first games that i worked as a professional developer. I was responsible for the development of the game in its initial phase, creating the basis for another developer to take over the development, I was responsible for developing the tile system and the movement system for the farm animals, applying the A* pathfinding algorithm.",
         "thumbUrl": "uirapuru",
         "videoUrl": "pSui2hxCLVo",
         "tags": [
@@ -312,7 +282,7 @@
       {
         "name": "Senninha AR",
         "description": "it's an AR experience based on the children's book 'Senninha - In the World of Enchanted Words'.",
-        "fullDescription": "",
+        "fullDescription": "This project was developed in partnership with the Ayrton Senna Institute. It is an augmented reality experience with the goal of increasing the child's immersion in reading the book 'Senninha - In the World of Enchanted Words'.",
         "thumbUrl": "senninhaAR",
         "videoUrl": "0AUMZ5sq_sg",
         "tags": [

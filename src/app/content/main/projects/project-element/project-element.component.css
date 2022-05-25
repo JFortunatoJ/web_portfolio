@@ -5,12 +5,13 @@
 }
 
 .project-info-image {
-  max-width: 100%;
-  max-height: 350px;
+  max-width: 325px;
+  max-height: 325px;
   border-radius: 15px;
   border: 5px solid #E0E1DD;
   overflow: hidden;
   position: relative;
+  margin: 0 auto;
 }
 
 .project-info-image img {
@@ -97,6 +98,8 @@
   float: top;
   margin-top: 7px;
   width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-info-description {
