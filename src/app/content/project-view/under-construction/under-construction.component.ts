@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-road-star',
+  selector: 'app-under-construction',
   templateUrl: './under-construction.component.html',
   styleUrls: ['./under-construction.component.css']
 })

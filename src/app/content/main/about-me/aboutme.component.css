@@ -1,11 +1,13 @@
 .about-me {
   margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
   /*background: linear-gradient(to top left, #005f55, #09a9a9);*/
   background: linear-gradient(to bottom left, #003459, #004066) no-repeat fixed;
-  padding: 20px;
+  /*padding: 20px;*/
   color: white;
   position: relative;
-  width: 100%;
+  width: 70%;
   border-radius: 10px;
 }
 
@@ -22,19 +24,23 @@
 .my-info {
   text-align: center;
   text-shadow: #222222 2px 2px;
-  row-gap: 20px;
-  display: grid;
+  display: block;
+}
+
+.my-info div{
+  margin-top: 15px;
 }
 
 .me {
   border-radius: 180px;
   border: white 5px solid;
-  width: 324px;
+  /*width: 324px;*/
+  width: min(40vw, 324px);
   height: auto;
 }
 
 .my-name {
-  font-size: 30px;
+  font-size: 1.5em;
 }
 
 .my-profession {
@@ -55,12 +61,14 @@
 .social-list img {
   width: auto;
   height: 45px;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
   transition: all 0.1s;
 }
 
 .social-list img:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
   filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.30));
 }
 
@@ -69,14 +77,44 @@
 }
 
 .about-me-title {
-  font-size: 40px;
+  font-size: min(5vw, 35px);
   text-transform: uppercase;
   text-shadow: 4px 2px 2px #222222;
 }
 
 .about-me-description {
-  font-size: 20px;
+  font-size: min(4vw, 20px);
   line-height: 25pt;
+}
+
+@media (max-width: 768px) {
+  .content {
+    display: grid;
+    grid-row-gap: 20px;
+  }
+
+  .my-info {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .social-list img {
+    height: 35px;
+  }
+
+  .social-list {
+    grid-auto-flow: column;
+    justify-content: space-around;
+  }
+
+  .about-me{
+    width: 100%;
+  }
+
+  .about-me-description {
+    line-height: 15pt;
+    /*text-align: justify;*/
+  }
 }
 
 a:link {
@@ -87,7 +125,7 @@ a:visited {
   color: #00a8e8;
 }
 
-a:hover{
+a:hover {
   transition: color 0.1s;
   color: #007ea7;
   /*text-decoration: underline;*/

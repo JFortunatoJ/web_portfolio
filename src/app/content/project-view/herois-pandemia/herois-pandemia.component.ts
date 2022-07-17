@@ -7,7 +7,8 @@ import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 })
 export class HeroisPandemiaComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   public imagesUrl: string[] = [
     'assets/images/herois-pandemia/heroisPandemia_3.jpg',

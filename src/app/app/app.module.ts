@@ -11,6 +11,7 @@ import {AppRoutingModule} from './app.routing.module';
 import {IndexModule} from '../content/main/index/index.module';
 import {IndexComponent} from '../content/main/index/index.component';
 import {PrivacyPolicyComponent} from '../privacy-policies/bouce-light/privacy-policy.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -25,11 +26,11 @@ import {PrivacyPolicyComponent} from '../privacy-policies/bouce-light/privacy-po
     BrowserModule,
     FormsModule,
     IndexModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
-  exports: [
-  ],
+  exports: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {

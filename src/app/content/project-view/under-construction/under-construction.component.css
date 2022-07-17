@@ -1,7 +1,7 @@
 .content {
   background-color: rgba(0, 0, 0, 0.3);
   height: auto;
-  width: 65%;
+  width: 95%;
   margin: 10px auto;
   border-radius: 10px;
   font-family: 'PT Sans', sans-serif;
@@ -9,7 +9,7 @@
 
 /deep/ .project-description {
   color: white;
-  padding: 20px 50px;
+  padding: 10px;
 }
 
 /deep/ .project-description-about {
@@ -27,7 +27,7 @@
   font-size: 20px;
 }
 
-.project-description-text a :link{
+.project-description-text a :link {
   color: #00a8e8;
 }
 
@@ -41,5 +41,15 @@ a:visited {
 /deep/ .project-info {
 }
 
-/deep/ .project-access{
+/deep/ .project-access {
+}
+
+@media (max-width: 768px) {
+  /deep/ .project-description-about {
+    font-size: 25px;
+  }
+
+  /deep/ .project-description-text {
+    font-size: 17px;
+  }
 }
