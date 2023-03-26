@@ -36,7 +36,7 @@
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fill, min(350px, 25vw));
   grid-template-rows: repeat(auto-fit, minmax(auto, auto));
-  margin: 20px auto;
+  margin: 0px auto;
   justify-content: space-evenly;
 }
 

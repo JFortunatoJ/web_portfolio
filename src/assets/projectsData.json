@@ -103,9 +103,9 @@
         ],
         "contributions": [
           "Gameplay Mechanics",
-          "Multiplayer",
+          "Multiplayer (Photon)",
           "Play Game Services and Apple Login",
-          "PlayFab Integration"
+          "PlayFab API"
         ],
         "categories": [
           "Casual"
@@ -160,7 +160,7 @@
         ]
       },
       {
-        "name": "Heróis da Pandemia",
+        "name": "Heroes of Pandemic",
         "description": "seeks through a playful way to pass prevention guidelines to COVID-19 following the recommendations of the brazilian Ministry of Health.",
         "fullDescription": "This project was developed in less than a month at the beginning of the COVID-19 pandemic in 2020 and its objective is to pass, in a playful and fun way, prevention guidelines to teach how to protect yourself from the virus. It has seven minigames, each with the goal of teaching a way of prevention for the virus, such as social distancing, hand hygiene, use of masks and others. I was responsible for porting the game to Web GL, by doing the necessary configurations and optimizations, integrating the Facebook SDK for login and saving the user's score and also for the development of the online ranking through the use of a REST API.",
         "thumbUrl": "heroispandemia",
@@ -173,7 +173,7 @@
         ],
         "contributions": [
           "Web GL port",
-          "Facebook Integration",
+          "Facebook API",
           "Ranking",
           "Optimization"
         ],
@@ -252,7 +252,7 @@
           "Trade Minigames",
           "In House Gameplay",
           "Tutorials",
-          "Facebook Integration",
+          "Facebook API",
           "Ranking",
           "Localization"
         ],
