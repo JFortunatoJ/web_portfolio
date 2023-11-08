@@ -2,6 +2,44 @@
   "MainScreenInfo": {
     "ProfessionalProjects": [
       {
+        "name": "Mundo SBT",
+        "description": "it's a mobile game that mixes MMO and life simulation elements.",
+        "fullDescription": "This game was developed in partnership with the Brazilian television station SBT. Focused on children, the player can interact with other players online in a thematic island full of references to the characters and the SBT brand. I was responsible for the development of the entire interior system of the player's house, from the customization system to the system for loading data and building the house in real time, as well as some other features of the island and strategies for optimizing the game's performance.",
+        "thumbUrl": "mundoSbt",
+        "videoUrl": "PUU0LOp6Ygs",
+        "tags": [
+          "Unity",
+          "C#",
+          "Mobile",
+          "3D"
+        ],
+        "contributions": [
+          "House Interior",
+          "House Inventory",
+          "Optimization"
+        ],
+        "categories": [
+          "Casual"
+        ],
+        "platforms": [
+          "Mobile"
+        ],
+        "engine": "Unity",
+        "languages": [
+          "C#"
+        ],
+        "access": [
+          {
+            "type": 0,
+            "url": "https://play.google.com/store/apps/details?id=com.sbt.mmo"
+          },
+          {
+            "type": 1,
+            "url": "https://apps.apple.com/br/app/mundo-sbt/id6443662485"
+          }
+        ]
+      },
+      {
         "name": "The Batman Experience",
         "description": "it is a virtual reality experience based on the movie The Batman (2022).",
         "fullDescription": "This game was developed in partnership with the company Ludi Experience and Warner Bros and is a virtual reality experience for Oculus Quest 2 based on the movie The Batman released in 2022. The game was developed to be played in several malls throughout Brazil. The game has three stages where the player needs to solve puzzles in order to advance and each stage represents an environment shown in the movie. I was responsible for developing all the interactions and flow of the game in Unity as well the integration of the sound effects, music and animations.",
